@@ -16,9 +16,10 @@ function App() {
           <a href="https://x.com/rajscripts100x" target='_blank' rel="noopener noreferrer">
             <img className='h-[40px]' src="/x.png" alt="Twitter/X" />
           </a>
-          <a href="https://github.com/rajyadav63" target='_blank' rel="noopener noreferrer">
-            <img className='h-[40px]' src="/github.png" alt="github" />
+          <a href="https://discord.com/users/999711650804412438" target="_blank" rel="noopener noreferrer">
+            <img className='h-[40px]' src="/discord.png" alt="discord" />
           </a>
+
           <a href="https://hashnode.com/@yadavraj36" target='_blank' rel="noopener noreferrer">
             <img className='h-[40px]' src="/hashnode.png" alt="hashnode" />
           </a>
