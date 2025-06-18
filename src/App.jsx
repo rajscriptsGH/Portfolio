@@ -23,9 +23,6 @@ function App() {
           <a href="https://hashnode.com/@yadavraj36" target='_blank' rel="noopener noreferrer">
             <img className='h-[40px]' src="/hashnode.png" alt="hashnode" />
           </a>
-          <a href="https://linkedin.com/in/rajscripts100in/" target='_blank' rel="noopener noreferrer">
-            <img className='h-[40px]' src="/linkedin.png" alt="linkedin" />
-          </a>
         </div>
 
         <div className='flex flex-col justify-center items-center text-center sm:w-[550px] w-[320px] px-2'>
