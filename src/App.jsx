@@ -3,7 +3,7 @@ import './App.css';
 function App() {
   return (
     <div className='h-screen w-screen flex justify-center items-center flex-col bg-gray-100'>
-      <p className='absolute top-5 bg-green-400 text-white px-4 py-1 rounded-lg text-center'>Rvmp soon</p>
+      <p className='absolute top-5 bg-green-400 text-white px-4 py-1 rounded-lg text-center'>Rvmp soon...</p>
       <div className='mt-[-150px]'>
         <img className='h-[200px] rounded-2xl shadow-lg' src="/profile.jpg" alt="Profile" />
       </div>
@@ -13,15 +13,18 @@ function App() {
         <p className='mb-2'>Full STUCK Developer</p>
 
         <div className='flex gap-3 mb-4'>
-          <a href="https://x.com/rajscripts100x" target='_blank' rel="noopener noreferrer">
-            <img className='h-[40px]' src="/x.png" alt="Twitter/X" />
+          <a href="https://x.com/rajscriptsX" target='_blank' rel="noopener noreferrer">
+            <img className='h-[40px] bg-sky-150 rounded-2xl' src="/x.png" alt="Twitter/X" />
+          </a>
+          <a href="https://github.com/rajyadav63" target='_blank' rel="noopener noreferrer">
+            <img className='h-[40px] bg-sky-150 rounded-xl' src="/github.png" alt="GitHub" />
           </a>
           <a href="https://discord.com/users/999711650804412438" target="_blank" rel="noopener noreferrer">
-            <img className='h-[40px]' src="/discord.png" alt="discord" />
+            <img className='h-[40px] bg-sky-150 rounded-xl' src="/discord.png" alt="discord" />
           </a>
 
           <a href="https://hashnode.com/@yadavraj36" target='_blank' rel="noopener noreferrer">
-            <img className='h-[40px]' src="/hashnode.png" alt="hashnode" />
+            <img className='h-[40px] bg-sky-150 rounded-xl' src="/hashnode.png" alt="hashnode" />
           </a>
         </div>
 
