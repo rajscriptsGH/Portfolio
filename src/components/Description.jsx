@@ -2,7 +2,7 @@ import React from 'react'
 
 const Description = () => {
     return (
-        <div className='flex flex-col justify-center items-center text-center  w-[300px] px-2'>
+        <div className='flex flex-col justify-center items-center text-center  w-[380px] px-2'>
             <p>
                 I write <span className='text-orange-400'>code</span>, <span className='text-red-400'>break</span> things, then <span className='text-green-300'>fix</span> them, usually in that order. Pretending to be productive.
             </p>
