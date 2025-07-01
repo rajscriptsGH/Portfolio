@@ -2,7 +2,7 @@ import React from 'react'
 
 const Social = () => {
     return (
-        <div className='flex gap-3 mb-4'>
+        <div className='flex gap-3 mt-3 mb-2'>
             <a href="https://x.com/rajscriptsX" target='_blank' rel="noopener noreferrer">
                 <img className='h-[40px] bg-sky-150 rounded-2xl' src="/x.png" alt="Twitter/X" />
             </a>
