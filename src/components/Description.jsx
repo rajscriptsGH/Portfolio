@@ -2,9 +2,9 @@ import React from 'react'
 
 const Description = () => {
     return (
-        <div className='flex flex-col justify-center items-center text-center sm:w-[550px] w-[320px] px-2'>
+        <div className='flex flex-col justify-center items-center text-center  w-[300px] px-2'>
             <p>
-                I write <span>code</span>, <span>break</span> things, then <span>fix</span> them, usually in that order. Pretending to be productive.
+                I write <span className='text-orange-400'>code</span>, <span className='text-red-400'>break</span> things, then <span className='text-green-300'>fix</span> them, usually in that order. Pretending to be productive.
             </p>
             <p className='flex justify-center items-center text-center underline text-blue-400 gap-0 '>
                 <img className='h-9' src="/dot.png" alt="dot" />
