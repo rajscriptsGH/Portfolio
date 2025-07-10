@@ -3,7 +3,7 @@ import React from 'react'
 const Profile = () => {
     return (
         <div>
-            <div className='mt-[-100px]'>
+            <div className='mt-[-20px]'>
                 <img className='h-[200px] rounded-2xl shadow-lg' src="/profile.jpg" alt="Profile" />
             </div>
             <div className='flex flex-col justify-center items-center mt-4'>
