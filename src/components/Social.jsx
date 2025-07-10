@@ -6,7 +6,7 @@ const Social = () => {
             <a href="https://x.com/rajscriptsX" target='_blank' rel="noopener noreferrer">
                 <img className='h-[40px] bg-sky-150 rounded-2xl' src="/x.png" alt="Twitter/X" />
             </a>
-            <a href="https://github.com/rajyadav63" target='_blank' rel="noopener noreferrer">
+            <a href="https://github.com/rajscriptsGH" target='_blank' rel="noopener noreferrer">
                 <img className='h-[40px] bg-sky-150 rounded-xl' src="/github.png" alt="GitHub" />
             </a>
             <a href="https://discord.com/users/999711650804412438" target="_blank" rel="noopener noreferrer">
