@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${outfit.variable} ${ovo.variable} antialiased`}
+        className={`${outfit.variable} ${ovo.variable} antialiased bg-slate-800`}
       >
         {children}
       </body>
