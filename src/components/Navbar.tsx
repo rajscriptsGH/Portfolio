@@ -5,7 +5,7 @@ import Image from "next/image";
 const Navbar = () => {
     return (
         <>
-            <div className='absolute top-0 left-0 w-full h-16 -z-10'>
+            <div className='absolute top-0 left-0 w-full h-full -z-10'>
                 <Image
                     src="/header-bg-color.png"
                     alt="header"
