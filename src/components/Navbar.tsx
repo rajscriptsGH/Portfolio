@@ -23,7 +23,7 @@ const Navbar = () => {
                     </a>
                 </div>
 
-                <ul className='hidden md:flex items-center py-2 rounded-full px-4 gap-2 lg:gap-5 bg-slate-600/90 shadow-sm'>
+                <ul className='hidden sm:flex items-center py-2 rounded-full px-4 gap-2 lg:gap-5 bg-slate-600/90 shadow-sm'>
                     <li>
                         <a className='px-2 hover:text-slate-300 font-sans' href="#home">Home</a>
                     </li>
