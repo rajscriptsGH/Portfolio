@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
-import { FloatingDock } from "@/components/ui/floating-dock";
-import { FloatingDockDemo } from "@/components/FloatingDock";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -34,7 +32,6 @@ export default function RootLayout({
         className={`${outfit.variable} ${ovo.variable} antialiased bg-slate-800`}
       >
         {children}
-        <FloatingDockDemo />
       </body>
     </html>
   );
