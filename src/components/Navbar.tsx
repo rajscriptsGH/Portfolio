@@ -23,7 +23,7 @@ const Navbar = () => {
                     </a>
                 </div>
 
-                <ul className='hidden sm:flex items-center py-2 rounded-full px-4 gap-2 lg:gap-5 bg-slate-600/90 shadow-sm'>
+                <ul className='flex items-center py-2 rounded-full px-4 gap-2 lg:gap-10 bg-slate-600/90 shadow-sm'>
                     <li>
                         <a className='px-2 hover:text-slate-300 font-sans' href="#home">Home</a>
                     </li>
@@ -36,14 +36,6 @@ const Navbar = () => {
                         <a className='px-2 hover:text-slate-300 font-sans' href="#contact">Contact</a>
                     </li>
                 </ul>
-                <div>
-                    <button>
-                        <Image
-                            src="/moon_icon.png"
-                            alt='mode'
-                            width={23} height={23} />
-                    </button>
-                </div>
             </nav>
         </>
     )
