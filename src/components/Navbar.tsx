@@ -33,9 +33,9 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li>
-                        <a className='px-2 hover:text-slate-300 font-sans underline underline-offset-1'
-                            href="#aboutme">
-                            About me
+                        <a className='px-2 hover:text-slate-300 font-sans underline underline-offset-1 text-amber-500'
+                            href="#contact">
+                            Contact
                         </a>
                     </li>
 
