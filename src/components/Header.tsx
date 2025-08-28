@@ -4,7 +4,7 @@ import React from 'react'
 
 const Header = () => {
     return (
-        <div id='home' className='flex justify-start items-center mt-30 lg:ml-32 gap-4'>
+        <div id='home' className='flex justify-start items-center mt-30 lg:ml-32 md:ml-[25px] gap-4'>
             <div className="relative w-40 h-40 md:w-50 md:h-45">
                 <Image
                     src="/profile.jpg"
