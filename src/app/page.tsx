@@ -1,3 +1,4 @@
+import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Github from "@/components/Github";
 import Header from "@/components/Header";
@@ -9,6 +10,7 @@ export default function Home() {
       <Navbar />
       <Header />
       <Github />
+      <About />
       <Contact />
     </div>
   );
