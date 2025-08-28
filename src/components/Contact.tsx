@@ -10,10 +10,10 @@ const Contact = () => {
             </p>
 
             {/* Cal.com embed */}
-            <div className="w-full max-w-3xl">
+            <div className="lg:w-full max-w-4xl ">
                 <iframe
                     src="https://cal.com/rajscripts/30min"
-                    style={{ width: "120%", height: "600px", border: "0" }}
+                    style={{ width: "100%", height: "600px", border: "0" }}
                     frameBorder="0"
                     scrolling="yes"
                 ></iframe>
