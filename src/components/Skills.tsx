@@ -35,7 +35,7 @@ const IconCard = ({ item }: any) => {
 
     return (
         <div
-            className="group relative flex items-center justify-center w-14 h-14 rounded-lg border-2 border-gray-500 cursor-pointer transition-all duration-300"
+            className="group relative flex items-center justify-center w-14 h-14 rounded-lg border-2 border-gray-500 cursor-pointer transition-all duration-300 ml-5"
             style={{ backgroundColor: hover ? item.bgColor : "transparent" }}
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
@@ -49,7 +49,7 @@ const IconCard = ({ item }: any) => {
 };
 
 const SkillsSection = () => (
-    <div className="mt-10 p-6">
+    <div className="mt-10 lg:ml-16 p-6">
         <h2 className="text-2xl font-semibold text-gray-200 mb-4 flex items-center gap-2">
             Skills & Tools
         </h2>
