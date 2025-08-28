@@ -28,7 +28,7 @@ const Navbar = () => {
                         <a className='px-2 hover:text-slate-300 font-sans' href="#home">Home</a>
                     </li>
                     <li>
-                        <a className='px-2 hover:text-slate-300 font-sans' href="#work">
+                        <a className='px-2 hover:text-slate-300 font-sans' href="#project">
                             Project
                         </a>
                     </li>

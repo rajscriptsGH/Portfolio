@@ -3,7 +3,7 @@ import React from 'react'
 
 const FeaturedProjects = () => {
     return (
-        <div>
+        <div id='project'>
             <div className="max-w-5xl md:ml-10 mx-auto px-10 mt-10">
                 <h2 className="text-2xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
                     {" "}
@@ -62,7 +62,7 @@ const FeaturedProjects = () => {
                             </a>
                         </div>
                     </div>
-                    {/* Project1 */}
+                    {/* Project2 */}
                     <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
 
                         {/* Title */}
@@ -114,7 +114,7 @@ const FeaturedProjects = () => {
                             </a>
                         </div>
                     </div>
-                    {/* Project1 */}
+                    {/* Project3 */}
                     <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
 
                         {/* Title */}
@@ -166,7 +166,7 @@ const FeaturedProjects = () => {
                             </a>
                         </div>
                     </div>
-                    {/* Project1 */}
+                    {/* Project4 */}
                     <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
 
                         {/* Title */}
@@ -218,7 +218,9 @@ const FeaturedProjects = () => {
                             </a>
                         </div>
                     </div>
-
+                </div>
+                <div className='flex items-center justify-center mt-5'>
+                    <button className='border px-4 py-2 rounded-md cursor-pointer hover:border-amber-700'>See More</button>
                 </div>
             </div>
         </div>
