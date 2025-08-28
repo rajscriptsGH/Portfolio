@@ -14,7 +14,10 @@ const About = () => {
         <p> I specialize in MERN stack, Next.js, and TypeScript, and I'm currently diving into Web3 while exploring UI/UX design.</p>
 
         <p>I love creating user-friendly applications, contributing to open-source projects, and solving real-world problems through code.</p>
-
+      </div>
+      <div className='mt-2 flex gap-2'>
+        <button className='border w-fit px-4 py-2 rounded-md cursor-pointer border-amber-600 hover:bg-white hover:text-black'>See more</button>
+        <button className='border w-fit px-4 py-2 rounded-md cursor-pointer bg-blue-700 border-white hover:bg-green-500 hover:text-white'>Resume</button>
       </div>
     </div>
   )
