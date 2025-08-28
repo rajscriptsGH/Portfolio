@@ -7,7 +7,7 @@ const About = () => {
     <div className='mt-15 px-5 lg:ml-25'>
       <h1 className='text-2xl font-semibold font-Ovo'>About Me</h1>
 
-      <div className='flex flex-col  md:flex-row gap-2 items-center justify-center mt-4 max-w-[600px]'>
+      <div className='flex flex-col gap-2 items-center justify-center mt-4 max-w-[600px]'>
         <p className=''>Hi! I'm <span className='font-bold'>Raj Yadav</span>, a Computer Science graduate and Full-Stack Developer passionate about building impactful digital products.
         </p>
 
