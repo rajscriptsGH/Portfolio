@@ -3,23 +3,23 @@ import React from 'react'
 
 const Contact = () => {
     return (
-        <div id='contact' className="flex flex-col items-center justify-center py-10 px-4 mt-10">
+        <div className="min-h-[60vh] flex flex-col items-center justify-center py-12 px-4">
             <h2 className="text-3xl font-bold mb-6">Contact Me</h2>
             <p className="text-gray-400 mb-8 text-center max-w-xl">
-                Schedule a 30-minute call with me directly through my calendar.
+                Book a free 30-minute session to bring clarity to your vision and kickstart our journey together.
             </p>
 
-            {/* Cal.com embed */}
-            <div className="lg:w-full max-w-4xl ">
-                <iframe
-                    src="https://cal.com/rajscripts/30min"
-                    style={{ width: "100%", height: "600px", border: "0" }}
-                    frameBorder="0"
-                    scrolling="yes"
-                ></iframe>
-            </div>
+            <a
+                href="https://cal.com/rajscripts/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 rounded-xl bg-blue-500 text-white font-semibold hover:bg-blue-600 transition"
+            >
+                Book a Call →
+            </a>
         </div>
     )
 }
 
 export default Contact
+
