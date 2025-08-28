@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 
 const TimeLocation = () => {
-    const [time, setTime] = useState("");
+    const [time, setTime] = useState<string | null>(null); // start with null
     const [visible, setVisible] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
 
@@ -48,6 +48,8 @@ const TimeLocation = () => {
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, [lastScrollY]);
+
+    if (!time) return null;
 
     return (
         <div
