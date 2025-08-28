@@ -14,7 +14,9 @@ const Header = () => {
                 />
             </div>
             <div className="flex flex-col">
-                <h1 className='text-4xl font-sans font-bold'>Raj Yadav</h1>
+                <h1 className='text-2xl sm:text-4xl font-sans font-bold'>Raj Yadav
+                    <span className='relative top-[-15px] right-[-10px] text-[15px]  text-green-500 border px-[10px] py-[5px] rounded-md'>Available</span>
+                </h1>
                 <p className='font-sans font-light'>Software Engineer</p>
                 <div className='flex gap-3 mt-2'>
                     <a href="https://github.com/rajscriptsGH" target="_blank" className='relative group'>
