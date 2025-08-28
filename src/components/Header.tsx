@@ -52,6 +52,28 @@ const Header = () => {
                             Linkedin
                         </span>
                     </a>
+                    <a href="mailto:vector36razz@gmail.com" target="_blank" className='relative group'>
+                        <div className="p-2 border border-slate-500 rounded-md hover:border-slate-200 transition">
+                            <Image
+                                src="/gmail.png"
+                                alt="github"
+                                width={24} height={24} />
+                        </div>
+                        <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-slate-200 text-black text-sm px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition">
+                            Gmail
+                        </span>
+                    </a>
+                    <a href="https://wa.me/+9779863452890" target="_blank" className='relative group'>
+                        <div className="p-2 border border-slate-500 rounded-md hover:border-slate-200 transition">
+                            <Image
+                                src="/whatsapp.png"
+                                alt="github"
+                                width={24} height={24} />
+                        </div>
+                        <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-slate-200 text-black text-sm px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition">
+                            Whatsapp
+                        </span>
+                    </a>
 
                 </div>
             </div>
