@@ -33,8 +33,13 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li>
-                        <a className='px-2 hover:text-slate-300 font-sans' href="#contact">Contact</a>
+                        <a className='px-2 hover:text-slate-300 font-sans underline underline-offset-1'
+                            href="#aboutme">
+                            About me
+                        </a>
                     </li>
+
+
                 </ul>
             </nav>
         </div>
