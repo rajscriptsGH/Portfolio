@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Contact from "@/components/Contact";
+import FeaturedProjects from "@/components/FeaturedProjects";
 import Github from "@/components/Github";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
@@ -13,6 +14,7 @@ export default function Home() {
       <Github />
       <About />
       <Skills />
+      <FeaturedProjects />
       <Contact />
     </div>
   );
