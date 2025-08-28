@@ -1,33 +1,60 @@
-"use client"
+"use client";
 import React, { useEffect, useState } from "react";
 
 const TimeLocation = () => {
     const [time, setTime] = useState("");
-    const [location, setLocation] = useState("");
+    const [visible, setVisible] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0);
 
     useEffect(() => {
-        // update time every second
-        const interval = setInterval(() => {
+        const updateTime = () => {
             const now = new Date();
+
             const formattedTime = now.toLocaleTimeString([], {
                 hour: "2-digit",
                 minute: "2-digit",
                 second: "2-digit",
+                hour12: false,
             });
-            setTime(formattedTime);
-        }, 1000);
 
-        // detect location (based on timezone, not GPS)
-        const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
-        setLocation(tz);
+            const offsetMinutes = now.getTimezoneOffset();
+            const offsetHours = Math.floor(Math.abs(offsetMinutes) / 60);
+            const offsetMins = Math.abs(offsetMinutes) % 60;
+            const sign = offsetMinutes <= 0 ? "+" : "-";
+            const gmt = `GMT${sign}${offsetHours}:${offsetMins
+                .toString()
+                .padStart(2, "0")}`;
 
+            const location = "Kathmandu, Nepal";
+
+            setTime(`${formattedTime} (${gmt})  ${location}`);
+        };
+
+        updateTime();
+        const interval = setInterval(updateTime, 1000);
         return () => clearInterval(interval);
     }, []);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > lastScrollY) {
+                setVisible(false);
+            } else {
+                setVisible(true);
+            }
+            setLastScrollY(window.scrollY);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [lastScrollY]);
+
     return (
-        <div className="w-full bg-gray-900 text-gray-200 text-sm px-6 py-2 flex justify-between items-center">
-            <span>📍 {location}</span>
-            <span>🕒 {time}</span>
+        <div
+            className={`fixed left-5 top-0 text-gray-200 text-sm px-6 py-2 font-mono transition-transform duration-300 ${visible ? "translate-y-0" : "-translate-y-full"
+                }`}
+        >
+            {time}
         </div>
     );
 };
