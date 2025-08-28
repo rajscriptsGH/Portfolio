@@ -4,12 +4,12 @@ import React from 'react'
 
 const Header = () => {
     return (
-        <div className='flex flex-col justify-center items-center mt-15'>
+        <div className='flex flex-col justify-center items-center mt-24'>
             <div>
                 <Image
                     src="/profile.jpg"
                     alt='profile_pic'
-                    width={190}
+                    width={160}
                     height={140}
                     className='rounded-4xl'
                 />

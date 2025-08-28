@@ -4,17 +4,17 @@ import Image from "next/image";
 
 const Navbar = () => {
     return (
-        <>
-            <div className='absolute top-0 left-0 w-full h-16 -z-10'>
-                <Image
-                    src="/header-bg-color.png"
-                    alt="header"
-                    fill
-                    className="object-cover"
-                />
+        <div className='fixed top-0 left-0 w-full h-16 z-50'>
 
-            </div>
-            <nav className='flex justify-between md:justify-around items-center w-full py-3 px-16 z-50'>
+            <Image
+                src="/header-bg-color.png"
+                alt="header"
+                fill
+                className="object-cover -z-10"
+            />
+
+
+            <nav className='flex justify-between md:justify-around items-center w-full py-3 px-16 relative z-10'>
                 <div>
                     <a
                         className='text-2xl md:text-3xl text-black font-semibold'
@@ -37,7 +37,7 @@ const Navbar = () => {
                     </li>
                 </ul>
             </nav>
-        </>
+        </div>
     )
 }
 
