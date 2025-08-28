@@ -14,8 +14,6 @@ const ovo = Ovo({
   variable: "--ovo-font",
 });
 
-
-
 export const metadata: Metadata = {
   title: "Portfolio",
   description: "",
@@ -23,15 +21,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
         className={`${outfit.variable} ${ovo.variable} antialiased bg-slate-800`}
       >
-        {children}
+        <div className="max-w-6xl mx-auto px-8 md:px-5">
+          {children}
+        </div>
       </body>
     </html>
   );
