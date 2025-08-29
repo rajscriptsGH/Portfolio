@@ -58,7 +58,7 @@ const FeaturedProjects = () => {
                                 target="_blank"
                                 className="px-4 py-1 rounded-lg bg-green-700 text-white hover:bg-orange-400 transition-colors"
                             >
-                                Live Demo
+                                Demo
                             </a>
                         </div>
                     </div>
@@ -110,7 +110,7 @@ const FeaturedProjects = () => {
                                 target="_blank"
                                 className="px-4 py-1 rounded-lg bg-green-700 text-white hover:bg-orange-400 transition-colors"
                             >
-                                Live Demo
+                                Demo
                             </a>
                         </div>
                     </div>
@@ -162,7 +162,7 @@ const FeaturedProjects = () => {
                                 target="_blank"
                                 className="px-4 py-1 rounded-lg bg-green-700 text-white hover:bg-orange-400 transition-colors"
                             >
-                                Live Demo
+                                Demo
                             </a>
                         </div>
                     </div>
@@ -214,7 +214,7 @@ const FeaturedProjects = () => {
                                 target="_blank"
                                 className="px-4 py-1 rounded-lg bg-green-700 text-white hover:bg-orange-400 transition-colors"
                             >
-                                Live Demo
+                                Demo
                             </a>
                         </div>
                     </div>
