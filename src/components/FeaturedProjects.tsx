@@ -49,14 +49,14 @@ const FeaturedProjects = () => {
                             <a
                                 href="https://github.com/rajscriptsGH/Pictofy"
                                 target="_blank"
-                                className="px-8 py-2 rounded-lg border border-blue-500 text-white hover:bg-slate-300 hover:text-black transition-colors"
+                                className="px-4 py-1 text-center rounded-lg border border-blue-500 text-white hover:bg-slate-300 hover:text-black transition-colors"
                             >
                                 GitHub
                             </a>
                             <a
                                 href="https://pictofy.vercel.app"
                                 target="_blank"
-                                className="px-6 py-2 rounded-lg bg-green-700 text-white hover:bg-orange-400 transition-colors"
+                                className="px-4 py-1 rounded-lg bg-green-700 text-white hover:bg-orange-400 transition-colors"
                             >
                                 Live Demo
                             </a>
@@ -101,14 +101,14 @@ const FeaturedProjects = () => {
                             <a
                                 href="https://github.com/rajscriptsGH/Pictofy"
                                 target="_blank"
-                                className="px-8 py-2 rounded-lg border border-blue-500 text-white hover:bg-slate-300 hover:text-black transition-colors"
+                                className="px-4 py-1 rounded-lg border border-blue-500 text-white hover:bg-slate-300 hover:text-black transition-colors"
                             >
                                 GitHub
                             </a>
                             <a
                                 href="https://pictofy.vercel.app"
                                 target="_blank"
-                                className="px-6 py-2 rounded-lg bg-green-700 text-white hover:bg-orange-400 transition-colors"
+                                className="px-4 py-1 rounded-lg bg-green-700 text-white hover:bg-orange-400 transition-colors"
                             >
                                 Live Demo
                             </a>
@@ -153,14 +153,14 @@ const FeaturedProjects = () => {
                             <a
                                 href="https://github.com/rajscriptsGH/Pictofy"
                                 target="_blank"
-                                className="px-8 py-2 rounded-lg border border-blue-500 text-white hover:bg-slate-300 hover:text-black transition-colors"
+                                className="px-4 py-1 rounded-lg border border-blue-500 text-white hover:bg-slate-300 hover:text-black transition-colors"
                             >
                                 GitHub
                             </a>
                             <a
                                 href="https://pictofy.vercel.app"
                                 target="_blank"
-                                className="px-6 py-2 rounded-lg bg-green-700 text-white hover:bg-orange-400 transition-colors"
+                                className="px-4 py-1 rounded-lg bg-green-700 text-white hover:bg-orange-400 transition-colors"
                             >
                                 Live Demo
                             </a>
@@ -205,14 +205,14 @@ const FeaturedProjects = () => {
                             <a
                                 href="https://github.com/rajscriptsGH/Pictofy"
                                 target="_blank"
-                                className="px-8 py-2 rounded-lg border border-blue-500 text-white hover:bg-slate-300 hover:text-black transition-colors"
+                                className="px-4 py-1 rounded-lg border border-blue-500 text-white hover:bg-slate-300 hover:text-black transition-colors"
                             >
                                 GitHub
                             </a>
                             <a
                                 href="https://pictofy.vercel.app"
                                 target="_blank"
-                                className="px-6 py-2 rounded-lg bg-green-700 text-white hover:bg-orange-400 transition-colors"
+                                className="px-4 py-1 rounded-lg bg-green-700 text-white hover:bg-orange-400 transition-colors"
                             >
                                 Live Demo
                             </a>
