@@ -3,22 +3,47 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className='mt-15 px-5 lg:ml-25'>
-      <h1 className='text-2xl font-semibold font-Ovo'>About Me</h1>
+    <section id="about" className="mt-16 px-6 lg:ml-24">
+      {/* Heading */}
+      <h1 className="text-2xl font-bold font-Ovo text-slate-300 mb-4">
+        About Me
+      </h1>
 
-      <div className='flex flex-col gap-2 items-center justify-center mt-4 max-w-[600px]'>
-        <p className=''>Hi! I'm <span className='font-bold'>Raj Yadav</span>, a Computer Science graduate and Full-Stack Developer passionate about building impactful digital products.
+      {/* Description */}
+      <div className="flex flex-col gap-4 items-start justify-center max-w-[700px] text-gray-500 leading-relaxed">
+        <p>
+          Hi! I'm <span className="font-bold text-slate-400">Raj Yadav</span>, a{" "}
+          <span className="text-blue-600">Computer Science graduate</span> and{" "}
+          <span className="text-amber-600">Full-Stack Developer</span> passionate about
+          building impactful digital products.
         </p>
 
-        <p> I specialize in MERN stack, Next.js, and TypeScript, and I'm currently diving into Web3 while exploring UI/UX design.</p>
+        <p>
+          I specialize in <span className="font-semibold text-green-600">MERN </span>stack,{" "}
+          <span className="font-semibold text-black">Next.js</span>, and{" "}
+          <span className="font-semibold text-blue-500">TypeScript</span>.
+          Currently, I'm exploring <span className="text-purple-600">Web3 </span>
+          and diving deeper into <span className="text-pink-600">UI/UX design</span>.
+        </p>
 
-        <p>I love creating user-friendly applications, contributing to open-source projects, and solving real-world problems through code.</p>
+        <p>
+          I love creating user-friendly applications, contributing to{" "}
+          <span className="italic">open-source projects</span>, and solving{" "}
+          <span className="underline decoration-amber-500">real-world problems</span>
+          through code.
+        </p>
       </div>
-      <div className='mt-2 flex gap-2'>
-        <button className='border w-fit px-4 py-2 rounded-md cursor-pointer border-amber-600 hover:bg-white hover:text-black'>See more</button>
-        <button className='border w-fit px-4 py-2 rounded-md cursor-pointer bg-blue-700 border-white hover:bg-green-500 hover:text-white'>Resume</button>
+
+      {/* Buttons */}
+      <div className="mt-6 flex gap-4">
+        <button className="border border-amber-600 text-amber-600 px-5 py-2 rounded-md transition hover:bg-amber-600 hover:text-white">
+          See More
+        </button>
+        <button className="bg-blue-700 border border-transparent px-5 py-2 rounded-md text-white transition hover:bg-green-600">
+          Resume
+        </button>
       </div>
-    </div>
+    </section>
   )
 }
 
