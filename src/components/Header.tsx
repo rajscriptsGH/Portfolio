@@ -22,9 +22,11 @@ const Header = () => {
             <div className="flex flex-col text-center sm:text-left">
                 <h1 className="text-2xl sm:text-4xl font-sans font-bold">
                     Razz
-                    <span className="relative top-[-15px] right-[-10px] text-[15px] text-green-500 border px-[10px] py-[5px] rounded-md">
+                    <span className="relative top-[-15px] right-[-10px] text-[15px] text-green-500 border px-[18px] py-[5px] rounded-md">
+                        <span className="absolute left-1 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
                         Available
                     </span>
+
                 </h1>
                 <p className="font-sans font-light">Software Engineer</p>
 
