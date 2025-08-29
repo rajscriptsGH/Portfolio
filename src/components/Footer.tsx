@@ -22,7 +22,7 @@ const Footer = () => {
         const dayOfYear = Math.floor(diff / oneDay)
 
         setQuote(gitaQuotes[dayOfYear % gitaQuotes.length])
-    }, [gitaQuotes])
+    },)
 
     return (
         <footer className="w-full py-6 mt-10 border-t border-gray-700 bg-gray-900 text-gray-300">
