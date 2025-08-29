@@ -15,14 +15,13 @@ const Footer = () => {
         "Whatever happened, happened for the good. Whatever is happening, is happening for the good. Whatever will happen, will also happen for the good. — BG 4.18"
     ]
 
-    // Pick quote based on the day of the year
     useEffect(() => {
         const dayOfYear = Math.floor(
             (new Date().getTime() - new Date(new Date().getFullYear(), 0, 0).getTime()) /
             (1000 * 60 * 60 * 24)
         )
         setQuote(gitaQuotes[dayOfYear % gitaQuotes.length])
-    }, [])
+    }, [gitaQuotes])
 
     return (
         <footer className="w-full py-6 mt-10 border-t border-gray-700 bg-gray-900 text-gray-300">
