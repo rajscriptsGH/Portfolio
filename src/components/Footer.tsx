@@ -1,10 +1,10 @@
 "use client"
-import React, { useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 
-const Footer: React.FC = () => {
-    const [quote, setQuote] = useState<string>("")
+const Footer = () => {
+    const [quote, setQuote] = useState("")
 
-    const gitaQuotes: string[] = [
+    const gitaQuotes = [
         "You have the right to work, but never to the fruit of work. — BG 2.47",
         "Change is the law of the universe. You can be a millionaire, or a pauper in an instant. — BG 2.14",
         "A person can rise through the efforts of his own mind; or draw himself down, in the same manner. — BG 6.5",
@@ -28,7 +28,9 @@ const Footer: React.FC = () => {
         <footer className="w-full py-6 mt-10 border-t border-gray-700 bg-gray-900 text-gray-300">
             <div className="container mx-auto flex flex-col items-center justify-center gap-4 px-4">
                 {/* Daily Gita Quote */}
-                <p className="italic text-center text-gray-400">&quot;{quote}&quot;</p>
+                {quote && (
+                    <p className="italic text-center text-gray-400">“{quote}”</p>
+                )}
 
                 {/* Copyright */}
                 <p className="text-sm text-gray-500">
