@@ -6,8 +6,16 @@ import {
 } from "react-icons/si";
 import { FaLinux, FaGitAlt, FaGithub, FaFigma, FaNpm } from "react-icons/fa";
 import { useState } from "react";
+import { IconType } from "react-icons";
 
-const skills = [
+// define type for skills
+type Skill = {
+    name: string;
+    icon: IconType;
+    bgColor: string;
+};
+
+const skills: Skill[] = [
     { name: "TypeScript", icon: SiTypescript, bgColor: "#3178c6" },
     { name: "JavaScript", icon: SiJavascript, bgColor: "#f7df1e" },
     { name: "Next.js", icon: SiNextdotjs, bgColor: "#000000" },
@@ -29,7 +37,7 @@ const skills = [
     { name: "Figma", icon: FaFigma, bgColor: "#f24e1e" },
 ];
 
-const IconCard = ({ item }: any) => {
+const IconCard = ({ item }: { item: Skill }) => {
     const IconComponent = item.icon;
     const [hover, setHover] = useState(false);
 
