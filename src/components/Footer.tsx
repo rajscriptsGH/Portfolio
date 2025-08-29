@@ -1,10 +1,10 @@
 "use client"
+/* eslint-disable react/no-unescaped-entities */
 import React, { useEffect, useState } from "react"
 
 const Footer = () => {
     const [quote, setQuote] = useState("")
 
-    // Bhagavad Gita Quotes
     const gitaQuotes = [
         "You have the right to work, but never to the fruit of work. — BG 2.47",
         "Change is the law of the universe. You can be a millionaire, or a pauper in an instant. — BG 2.14",
@@ -21,7 +21,7 @@ const Footer = () => {
             (1000 * 60 * 60 * 24)
         )
         setQuote(gitaQuotes[dayOfYear % gitaQuotes.length])
-    }, [gitaQuotes])
+    }, [])
 
     return (
         <footer className="w-full py-6 mt-10 border-t border-gray-700 bg-gray-900 text-gray-300">
