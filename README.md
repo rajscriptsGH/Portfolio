@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio
 
-## Getting Started
+A modern and responsive developer portfolio built with **Next.js, TailwindCSS, and TypeScript**.  
+Showcases projects, skills, and experiences in a clean UI with fast performance.
 
-First, run the development server:
+---
+
+## ✨ Features
+
+- ⚡ **Next.js 14 (App Router)** – Server & Client components
+- 🎨 **TailwindCSS** – Custom theme & utility-first styling
+- 🔤 **Google Fonts Integration** (Outfit & Ovo)
+- 📱 **Responsive Design** – Mobile-first and fully adaptive
+- ⚙️ **TypeScript** – Type-safe development
+- 🖼️ **SVG & Image Optimization**
+
+---
+
+## 🛠️ Tech Stack
+
+- Next.js – React Framework
+- TailwindCSS – Styling
+- TypeScript – Static Typing
+- SVGR – SVG as React components
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/rajscriptsGH/Portfolio.git
+cd Portfolio
+```
+
+Install dependencies
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+Run the development server
 
 ```bash
 npm run dev
+
 # or
+
 yarn dev
+
 # or
+
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open <http://localhost:3000>
+ in your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 📂 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Portfolio/
+┣ src/
+ ┣ app/
+ ┣ components/       # Reusable UI components
+ ┣ lib/
+ ┣ next.config.ts    # Next.js configuration
+ ┗ tsconfig.json     # TypeScript configuration
+┣ public/           # Static assets (images, icons, etc.)
 
-## Learn More
+### Customization
 
-To learn more about Next.js, take a look at the following resources:
+- Update your info in app/page.tsx and components
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Add new projects in components/FeaturedProjects.tsx
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Replace fonts in app/layout.tsx
 
-## Deploy on Vercel
+- Change theme colors in globals.css
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📦 Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This portfolio can be easily deployed on:
+
+Vercel
+ (Recommended – seamless Next.js integration)
+
+## 🤝 Contributing
+
+Pull requests are welcome! If you’d like to improve the portfolio or add features, feel free to fork this repo and open a PR.
+
+### License
+
+This project is licensed under the MIT License.
+You are free to use and modify it for your own portfolio.
+
+### 👨‍💻 Author
+
+Built with ❤️ by Razz
+
+---
