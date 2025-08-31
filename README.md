@@ -3,6 +3,10 @@
 A modern and responsive developer portfolio built with **Next.js, TailwindCSS, and TypeScript**.  
 Showcases projects, skills, and experiences in a clean UI with fast performance.
 
+## Screenshot
+
+![Portfolio Demo](./public/portfolio.png)
+
 ---
 
 ## ✨ Features
