@@ -53,7 +53,7 @@ const TimeLocation = () => {
 
     return (
         <div
-            className={`fixed left-5 top-0 text-gray-200 text-sm px-6 py-2 font-mono transition-transform duration-300 ${visible ? "translate-y-0" : "-translate-y-full"
+            className={`fixed left-5 top-0 text-green-500 text-sm px-6 py-2 font-mono transition-transform duration-300 ${visible ? "translate-y-0" : "-translate-y-full"
                 }`}
         >
             {time}
