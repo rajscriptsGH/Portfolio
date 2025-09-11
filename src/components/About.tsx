@@ -21,7 +21,7 @@ const About: FC = () => {
         <p>
           I specialize in{" "}
           <span className="font-semibold text-green-600">MERN </span>stack,{" "}
-          <span className="font-semibold text-black">Next.js</span>, and{" "}
+          <span className="font-semibold text-white">Next.js</span>, and{" "}
           <span className="font-semibold text-blue-500">TypeScript</span>. Currently,
           I am exploring <span className="text-purple-600">Web3 </span> and diving
           deeper into <span className="text-pink-600">UI/UX design</span>.
