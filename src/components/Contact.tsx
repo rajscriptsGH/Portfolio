@@ -5,6 +5,7 @@ const Contact = () => {
     return (
         <div className="min-h-[60vh] flex flex-col items-center justify-center py-12 px-4">
             <h2 className="text-3xl font-bold mb-6">Contact Me</h2>
+
             <p className="text-gray-400 mb-8 text-center max-w-xl">
                 Book a free 30-minute session to bring clarity to your vision and kickstart our journey together.
             </p>
@@ -22,4 +23,3 @@ const Contact = () => {
 }
 
 export default Contact
-
