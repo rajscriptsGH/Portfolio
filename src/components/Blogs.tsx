@@ -10,6 +10,12 @@ interface Blog {
 
 const blogs: Blog[] = [
     {
+        title: "My Journey into fullStack Development",
+        description: "How I started learning full stack developemt, smart contracts, and integrating Web3.",
+        date: "2025-04-22",
+        link: "/blogs/web2-journey",
+    },
+    {
         title: "How I Built Pictofy",
         description: "A deep dive into building an AI-powered text-to-image web app using MERN + Tailwind.",
         date: "2025-08-15",
@@ -27,6 +33,7 @@ const blogs: Blog[] = [
         date: "2025-07-10",
         link: "/blogs/web3-journey",
     },
+
 ]
 
 const Blogs = () => {
