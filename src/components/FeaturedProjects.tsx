@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
+import { FaGithub } from "react-icons/fa";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const FeaturedProjects = () => {
     return (
@@ -49,16 +51,16 @@ const FeaturedProjects = () => {
                             <a
                                 href="https://github.com/rajscriptsGH/Pictofy"
                                 target="_blank"
-                                className="px-4 py-1 text-center rounded-lg border border-blue-500 text-white hover:bg-slate-300 hover:text-black transition-colors"
+                                className="px-4 py-1 text-center rounded-lg border border-blue-500 text-white hover:bg-slate-300 hover:text-black transition-colors flex items-center gap-2"
                             >
-                                GitHub
+                                <FaGithub /> GitHub
                             </a>
                             <a
                                 href="https://pictofy.vercel.app"
                                 target="_blank"
-                                className="px-4 py-1 rounded-lg bg-green-700 text-white hover:bg-orange-400 transition-colors"
+                                className="px-4 py-1 rounded-lg bg-green-700 text-white hover:bg-orange-400 transition-colors flex items-center gap-2"
                             >
-                                Demo
+                                <FaExternalLinkAlt /> Demo
                             </a>
                         </div>
                     </div>
@@ -101,16 +103,16 @@ const FeaturedProjects = () => {
                             <a
                                 href="https://github.com/rajscriptsGH/ByteBrain"
                                 target="_blank"
-                                className="px-4 py-1 rounded-lg border border-blue-500 text-white hover:bg-slate-300 hover:text-black transition-colors"
+                                className="px-4 py-1 rounded-lg border border-blue-500 text-white hover:bg-slate-300 hover:text-black transition-colors flex items-center gap-2"
                             >
-                                GitHub
+                                <FaGithub /> GitHub
                             </a>
                             <a
                                 href="https://pictofy.vercel.app"
                                 target="_blank"
-                                className="px-4 py-1 rounded-lg bg-green-700 text-white hover:bg-orange-400 transition-colors"
+                                className="px-4 py-1 rounded-lg bg-green-700 text-white hover:bg-orange-400 transition-colors flex items-center gap-2"
                             >
-                                Demo
+                                <FaExternalLinkAlt /> Demo
                             </a>
                         </div>
                     </div>
@@ -153,16 +155,16 @@ const FeaturedProjects = () => {
                             <a
                                 href="https://github.com/rajscriptsGH/AnonQuest"
                                 target="_blank"
-                                className="px-4 py-1 rounded-lg border border-blue-500 text-white hover:bg-slate-300 hover:text-black transition-colors"
+                                className="px-4 py-1 rounded-lg border border-blue-500 text-white hover:bg-slate-300 hover:text-black transition-colors flex items-center gap-2"
                             >
-                                GitHub
+                                <FaGithub /> GitHub
                             </a>
                             <a
                                 href="https://AnonQuest.vercel.app"
                                 target="_blank"
-                                className="px-4 py-1 rounded-lg bg-green-700 text-white hover:bg-orange-400 transition-colors"
+                                className="px-4 py-1 rounded-lg bg-green-700 text-white hover:bg-orange-400 transition-colors flex items-center gap-2"
                             >
-                                Demo
+                                <FaExternalLinkAlt /> Demo
                             </a>
                         </div>
                     </div>
@@ -205,16 +207,16 @@ const FeaturedProjects = () => {
                             <a
                                 href="https://github.com/rajscriptsGH/Talksy"
                                 target="_blank"
-                                className="px-4 py-1 rounded-lg border border-blue-500 text-white hover:bg-slate-300 hover:text-black transition-colors"
+                                className="px-4 py-1 rounded-lg border border-blue-500 text-white hover:bg-slate-300 hover:text-black transition-colors flex items-center gap-2"
                             >
-                                GitHub
+                                <FaGithub /> GitHub
                             </a>
                             <a
                                 href="https://talksy.vercel.app"
                                 target="_blank"
-                                className="px-4 py-1 rounded-lg bg-green-700 text-white hover:bg-orange-400 transition-colors"
+                                className="px-4 py-1 rounded-lg bg-green-700 text-white hover:bg-orange-400 transition-colors flex items-center gap-2"
                             >
-                                Demo
+                                <FaExternalLinkAlt /> Demo
                             </a>
                         </div>
                     </div>
