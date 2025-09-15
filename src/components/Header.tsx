@@ -20,7 +20,8 @@ const Header = () => {
 
             {/* Text Section */}
             <div className="flex flex-col text-center sm:text-left">
-                <h1 className="text-3xl sm:text-4xl font-bold font-sans text-gray-900 dark:text-gray-500 relative inline-block">
+                <h1 className="text-3xl sm:text-4xl font-bold font-sans text-gray-800 dark:text-slate-500
+                 relative inline-block">
                     Razz
                     <span className="hidden absolute top-[-20px] right-[50px] text-sm sm:text-base px-4 py-1 rounded-md bg-gradient-to-r from-green-800 to-green-500 text-white sm:flex items-center gap-2 shadow-md">
                         <span className="w-2 h-2 rounded-full bg-white animate-pulse"></span>
@@ -28,8 +29,8 @@ const Header = () => {
                     </span>
                 </h1>
 
-                <p className="font-light text-gray-900 dark:text-gray-500 text-lg sm:text-xl mt-2">
-                    Software Engineer
+                <p className="font-light text-gray-600 dark:text-gray-500 text-lg sm:text-xl mt-2">
+                    smtg developer
                 </p>
 
                 {/* Social Links */}
