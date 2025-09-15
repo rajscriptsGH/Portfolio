@@ -12,62 +12,81 @@ const Navbar = () => {
         return () => window.removeEventListener("hashchange", handleHashChange);
     }, []);
 
+    const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+        e.preventDefault();
+        const element = href === "/" ? document.body : document.querySelector(href);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth", block: "start" });
+            setActive(href);
+        }
+    }
+
     const linkClasses = (href: string) =>
-        `group relative flex items-center gap-2 px-3 py-1 font-sans hover:text-slate-300 transition ${active === href
-            ? "underline underline-offset-1 text-amber-500 bg-slate-700/60 rounded-md"
-            : ""
+        `group relative flex items-center gap-2 px-3 py-1 font-sans transition-all
+        ${active === href
+            ? "text-white bg-gradient-to-r from-blue-500 to-cyan-400 rounded-md"
+            : "text-gray-200 hover:text-white"
         }`;
 
     return (
-        <div>
-            <nav className="flex justify-center items-center w-full py-3 px-16 relative z-10 mt-20">
-                <ul className="fixed flex items-center py-3 rounded-lg px-4 gap-4 lg:gap-10 bg-slate-600/90 shadow-sm">
+        <nav className="fixed top-16 left-1/2 -translate-x-1/2 z-50 flex justify-center w-auto px-4 py-3 bg-white/10 backdrop-blur-lg rounded-2xl shadow-lg">
+            <ul className="flex items-center gap-4 lg:gap-10">
 
-                    {/* Home */}
-                    <li>
-                        <a className={linkClasses("/")} href="/">
-                            <Home size={20} />
-                            {active === "/" && <span>Home</span>}
+                {/* Home */}
+                <li>
+                    <a
+                        className={linkClasses("/")}
+                        href="/"
+                        onClick={(e) => handleClick(e, "/")}
+                    >
+                        <Home size={20} />
+                        {active === "/" && <span className="hidden lg:inline font-semibold">Home</span>}
 
-                            {/* Tooltip on top */}
-                            {active !== "/" && (
-                                <span className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 px-2 py-1 text-xs rounded bg-slate-700 text-white opacity-0 group-hover:opacity-100 transition pointer-events-none">
-                                    Home
-                                </span>
-                            )}
-                        </a>
-                    </li>
+                        {active !== "/" && (
+                            <span className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 px-2 py-1 text-xs rounded bg-blue-500 text-white opacity-0 group-hover:opacity-100 transition pointer-events-none">
+                                Home
+                            </span>
+                        )}
+                    </a>
+                </li>
 
-                    {/* Projects */}
-                    <li>
-                        <a className={linkClasses("#project")} href="#project">
-                            <FolderKanban size={20} />
-                            {active === "#project" && <span>Projects</span>}
+                {/* Projects */}
+                <li>
+                    <a
+                        className={linkClasses("#project")}
+                        href="#project"
+                        onClick={(e) => handleClick(e, "#project")}
+                    >
+                        <FolderKanban size={20} />
+                        {active === "#project" && <span className="hidden lg:inline font-semibold">Projects</span>}
 
-                            {active !== "#project" && (
-                                <span className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 px-2 py-1 text-xs rounded bg-slate-700 text-white opacity-0 group-hover:opacity-100 transition pointer-events-none">
-                                    Projects
-                                </span>
-                            )}
-                        </a>
-                    </li>
+                        {active !== "#project" && (
+                            <span className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 px-2 py-1 text-xs rounded bg-blue-500 text-white opacity-0 group-hover:opacity-100 transition pointer-events-none">
+                                Projects
+                            </span>
+                        )}
+                    </a>
+                </li>
 
-                    {/* Blogs */}
-                    <li>
-                        <a className={linkClasses("#blog")} href="#blog">
-                            <BookOpen size={20} />
-                            {active === "#blog" && <span>Blogs</span>}
+                {/* Blogs */}
+                <li>
+                    <a
+                        className={linkClasses("#blog")}
+                        href="#blog"
+                        onClick={(e) => handleClick(e, "#blog")}
+                    >
+                        <BookOpen size={20} />
+                        {active === "#blog" && <span className="hidden lg:inline font-semibold">Blogs</span>}
 
-                            {active !== "#blog" && (
-                                <span className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 px-2 py-1 text-xs rounded bg-slate-700 text-white opacity-0 group-hover:opacity-100 transition pointer-events-none">
-                                    Blogs
-                                </span>
-                            )}
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+                        {active !== "#blog" && (
+                            <span className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 px-2 py-1 text-xs rounded bg-blue-500 text-white opacity-0 group-hover:opacity-100 transition pointer-events-none">
+                                Blogs
+                            </span>
+                        )}
+                    </a>
+                </li>
+            </ul>
+        </nav>
     )
 }
 

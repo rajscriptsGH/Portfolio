@@ -35,33 +35,27 @@ const skills: Skill[] = [
 ];
 
 const SkillsSection = () => (
-    <div className="mt-10 lg:ml-16 p-6">
-        <h2 className="text-2xl font-semibold text-gray-200 mb-4">
+    <div className="mt-16 lg:ml-20 px-6">
+        {/* Heading with gradient theme */}
+        <h2 className="text-3xl font-bold mb-8 text-left lg:text-left
+            bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
             Skills & Tools
         </h2>
-        <div className="flex flex-wrap gap-3">
+
+        <div className="flex flex-wrap gap-5 justify-center lg:justify-start">
             {skills.map(({ name, icon: Icon, color }) => (
-                <span
+                <div
                     key={name}
-                    className="flex items-center gap-2 px-4 py-2 rounded-md font-medium text-sm 
-                     bg-gray-300 text-black cursor-pointer transition-colors duration-300"
-                    style={{
-                        // default
-                        backgroundColor: "var(--skill-bg, #e5e7eb)",
-                        color: "var(--skill-text, black)",
-                    }}
-                    onMouseEnter={(e) => {
-                        e.currentTarget.style.backgroundColor = color;
-                        e.currentTarget.style.color = "white";
-                    }}
-                    onMouseLeave={(e) => {
-                        e.currentTarget.style.backgroundColor = "#e5e7eb"; // Tailwind gray-300
-                        e.currentTarget.style.color = "black";
-                    }}
+                    className="flex items-center gap-3 px-5 py-3 rounded-2xl
+                        bg-white/10 backdrop-blur-lg shadow-lg cursor-default
+                        transition-transform duration-300 hover:-translate-y-1 hover:shadow-2xl"
                 >
-                    <Icon className="text-base" />
-                    {name}
-                </span>
+                    <Icon className="text-xl" style={{ color }} />
+                    <span className="font-semibold text-sm
+                        bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
+                        {name}
+                    </span>
+                </div>
             ))}
         </div>
     </div>

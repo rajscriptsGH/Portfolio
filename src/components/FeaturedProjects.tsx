@@ -1,229 +1,135 @@
-import Image from 'next/image'
-import React from 'react'
-import { FaGithub } from "react-icons/fa";
-import { FaExternalLinkAlt } from "react-icons/fa";
+"use client"
+import Image from "next/image"
+import React from "react"
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"
 
 const FeaturedProjects = () => {
+    const projects = [
+        {
+            title: "Pictofy",
+            img: "/pictofy.png",
+            desc: "A modern AI-powered web app that generates stunning images from text.",
+            tech: ["React", "Node.js", "MongoDB", "Express", "Tailwind"],
+            github: "https://github.com/rajscriptsGH/Pictofy",
+            demo: "https://pictofy.vercel.app",
+        },
+        {
+            title: "ByteBrain",
+            img: "/bytebrain.png",
+            desc: "A full-stack Second Brain app to organize thoughts, ideas, and notes.",
+            tech: ["TypeScript", "React", "Node.js", "MongoDB", "Express", "Tailwind"],
+            github: "https://github.com/rajscriptsGH/ByteBrain",
+            demo: "https://bytebrain.vercel.app",
+        },
+        {
+            title: "AnonQuest (in progress)",
+            img: "/anonquest.png",
+            desc: "An open-source AMA (Ask Me Anything) app with anonymous Q&A.",
+            tech: ["Next.js", "TypeScript", "Tailwind", "Node.js", "MongoDB", "Express"],
+            github: "https://github.com/rajscriptsGH/AnonQuest",
+            demo: "https://anonquest.vercel.app",
+        },
+        {
+            title: "Talksy (in progress)",
+            img: "/talksyChat.png",
+            desc: "A real-time chat and video app for fast and simple communication.",
+            tech: ["React", "Node.js", "MongoDB", "Express", "Tailwind", "Socket.io", "Stream"],
+            github: "https://github.com/rajscriptsGH/Talksy",
+            demo: "https://talksy.vercel.app",
+        },
+    ]
+
     return (
-        <div id='project'>
-            <div className="max-w-5xl md:ml-10 mx-auto px-10 mt-10">
-                <h2 className="text-2xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
-                    {" "}
-                    <span className='text-white'>Featured</span> Projects
-                </h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    {/* Project1 */}
-                    <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
+        <div id="project" className="relative max-w-6xl mx-auto px-6 py-20 lg:ml-20">
+            <h2 className="text-4xl font-bold mb-16 text-left">
+                <span className="bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
+                    Featured
+                </span>{" "}
+                Projects
+            </h2>
 
-                        {/* Title */}
-                        <h3 className="text-xl font-bold mb-3">Pictofy</h3>
-
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 justify-items-center">
+                {projects.map((p, i) => (
+                    <div
+                        key={i}
+                        className="group relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 w-full max-w-md"
+                    >
                         {/* Image */}
-                        <div className="relative w-full h-60 overflow-hidden rounded-2xl">
+                        <div className="relative w-full h-72 md:h-80 rounded-2xl overflow-hidden">
                             <Image
-                                src="/pictofy.png"
-                                alt="pictofy"
+                                src={p.img}
+                                alt={p.title}
                                 fill
-                                className="object-cover rounded-2xl transition-all duration-700 hover:scale-110"
-
+                                className="object-cover transform transition-transform duration-700 group-hover:scale-105"
                             />
+
+                            {/* Always visible content */}
+                            <div className="absolute bottom-0 left-0 p-4 bg-white/80 backdrop-blur-md rounded-tl-xl rounded-tr-xl">
+                                <h3 className="text-xl font-bold bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
+                                    {p.title}
+                                </h3>
+                                <p className="text-sm text-gray-700">{p.desc}</p>
+                            </div>
+
                         </div>
 
-                        {/* Description */}
-                        <p className="text-gray-400 mt-4 mb-4">
-                            A modern AI-powered web app that generates stunning images from text.
-                        </p>
 
-                        {/* Tech Stack */}
-                        <div className="flex flex-wrap gap-2 mb-4">
-                            {["React", "Node.js", "MongoDB", "Express", "Tailwind"].map((tech, key) => (
-                                <span
-                                    key={key}
-                                    className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all"
+                        {/* Content that slides up on hover */}
+                        <div className="absolute bottom-0 left-0 right-0 p-6 bg-white/90 backdrop-blur-md rounded-b-2xl transition-transform duration-500 transform translate-y-full group-hover:translate-y-0">
+
+                            {/* Title with gradient */}
+                            <h3 className="text-2xl font-bold mb-2 
+        bg-gradient-to-r from-blue-500 to-cyan-400 
+        bg-clip-text text-transparent">
+                                {p.title}
+                            </h3>
+
+                            {/* Description */}
+                            <p className="text-sm text-gray-700 mb-4">{p.desc}</p>
+
+                            {/* Tech stack with hover gradient */}
+                            <div className="flex flex-wrap gap-2 mb-4">
+                                {p.tech.map((t, idx) => (
+                                    <span
+                                        key={idx}
+                                        className="badge badge-outline text-gray-700 border-gray-400 
+                    hover:text-transparent hover:bg-clip-text 
+                    hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-400 
+                    transition-all duration-300"
+                                    >
+                                        {t}
+                                    </span>
+                                ))}
+                            </div>
+
+                            {/* Buttons */}
+                            <div className="flex gap-4 mt-4">
+                                {/* GitHub Button */}
+                                <a
+                                    href={p.github}
+                                    target="_blank"
+                                    className="flex items-center gap-2 px-4 py-2 rounded-xl bg-black text-white font-semibold text-sm border-2 border-transparent transition-all duration-300 hover:border-blue-500 hover:scale-105"
                                 >
-                                    {tech}
-                                </span>
-                            ))}
-                        </div>
+                                    <FaGithub className="text-lg" />
+                                    GitHub
+                                </a>
 
-                        {/* Buttons */}
-                        <div className="flex gap-3">
-                            <a
-                                href="https://github.com/rajscriptsGH/Pictofy"
-                                target="_blank"
-                                className="px-4 py-1 text-center rounded-lg border border-blue-500 text-white hover:bg-slate-300 hover:text-black transition-colors flex items-center gap-2"
-                            >
-                                <FaGithub /> GitHub
-                            </a>
-                            <a
-                                href="https://pictofy.vercel.app"
-                                target="_blank"
-                                className="px-4 py-1 rounded-lg bg-green-700 text-white hover:bg-orange-400 transition-colors flex items-center gap-2"
-                            >
-                                <FaExternalLinkAlt /> Demo
-                            </a>
-                        </div>
-                    </div>
-                    {/* Project2 */}
-                    <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
-
-                        {/* Title */}
-                        <h3 className="text-xl font-bold mb-3">ByteBrain</h3>
-
-                        {/* Image */}
-                        <div className="relative w-full h-60 overflow-hidden rounded-2xl">
-                            <Image
-                                src="/bytebrain.png"
-                                alt="pictofy"
-                                fill
-                                className="object-cover rounded-2xl transition-all duration-700 hover:scale-110"
-
-                            />
-                        </div>
-
-                        {/* Description */}
-                        <p className="text-gray-400 mt-4 mb-4">
-                            A full-stack Second Brain application designed to help individuals to store their thoughts, ideas, and notes in a structured way
-                        </p>
-
-                        {/* Tech Stack */}
-                        <div className="flex flex-wrap gap-2 mb-4">
-                            {["TypeScript", "React", "Node.js", "MongoDB", "Express", "Tailwind"].map((tech, key) => (
-                                <span
-                                    key={key}
-                                    className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all"
+                                {/* Demo Button */}
+                                <a
+                                    href={p.demo}
+                                    target="_blank"
+                                    className="flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-blue-500 to-cyan-400 text-white font-semibold text-sm shadow-md transition-all duration-300 hover:shadow-xl hover:scale-105"
                                 >
-                                    {tech}
-                                </span>
-                            ))}
+                                    <FaExternalLinkAlt className="text-lg" />
+                                    Demo
+                                </a>
+                            </div>
+
+
                         </div>
 
-                        {/* Buttons */}
-                        <div className="flex gap-3">
-                            <a
-                                href="https://github.com/rajscriptsGH/ByteBrain"
-                                target="_blank"
-                                className="px-4 py-1 rounded-lg border border-blue-500 text-white hover:bg-slate-300 hover:text-black transition-colors flex items-center gap-2"
-                            >
-                                <FaGithub /> GitHub
-                            </a>
-                            <a
-                                href="https://pictofy.vercel.app"
-                                target="_blank"
-                                className="px-4 py-1 rounded-lg bg-green-700 text-white hover:bg-orange-400 transition-colors flex items-center gap-2"
-                            >
-                                <FaExternalLinkAlt /> Demo
-                            </a>
-                        </div>
                     </div>
-                    {/* Project3 */}
-                    <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
-
-                        {/* Title */}
-                        <h3 className="text-xl font-bold mb-3">AnonQuest <span className='text-[15px] font-extralight ml-3 text-gray-400'>in progress</span></h3>
-
-                        {/* Image */}
-                        <div className="relative w-full h-60 overflow-hidden rounded-2xl">
-                            <Image
-                                src="/anonquest.png"
-                                alt="pictofy"
-                                fill
-                                className="object-cover rounded-2xl transition-all duration-700 hover:scale-110"
-
-                            />
-                        </div>
-
-                        {/* Description */}
-                        <p className="text-gray-400 mt-4 mb-4">
-                            AnonQuest is an open-source AMA (Ask Me Anything) web app that allows users to ask and answer questions anonymously.
-                        </p>
-
-                        {/* Tech Stack */}
-                        <div className="flex flex-wrap gap-2 mb-4">
-                            {["Next.js", "TypeScript", "Tailwind", "Node.js", "MongoDB", "Express"].map((tech, key) => (
-                                <span
-                                    key={key}
-                                    className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all"
-                                >
-                                    {tech}
-                                </span>
-                            ))}
-                        </div>
-
-                        {/* Buttons */}
-                        <div className="flex gap-3">
-                            <a
-                                href="https://github.com/rajscriptsGH/AnonQuest"
-                                target="_blank"
-                                className="px-4 py-1 rounded-lg border border-blue-500 text-white hover:bg-slate-300 hover:text-black transition-colors flex items-center gap-2"
-                            >
-                                <FaGithub /> GitHub
-                            </a>
-                            <a
-                                href="https://AnonQuest.vercel.app"
-                                target="_blank"
-                                className="px-4 py-1 rounded-lg bg-green-700 text-white hover:bg-orange-400 transition-colors flex items-center gap-2"
-                            >
-                                <FaExternalLinkAlt /> Demo
-                            </a>
-                        </div>
-                    </div>
-                    {/* Project4 */}
-                    <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
-
-                        {/* Title */}
-                        <h3 className="text-xl font-bold mb-3">Talksy <span className='text-[15px] font-extralight ml-3 text-gray-400'>in progress</span></h3>
-
-                        {/* Image */}
-                        <div className="relative w-full h-60 overflow-hidden rounded-2xl">
-                            <Image
-                                src="/talksyChat.png"
-                                alt="pictofy"
-                                fill
-                                className="object-cover rounded-2xl transition-all duration-700 hover:scale-110"
-
-                            />
-                        </div>
-
-                        {/* Description */}
-                        <p className="text-gray-400 mt-4 mb-4">
-                            Talksy - A real-time chat and video app for fast and simple communication
-                        </p>
-
-                        {/* Tech Stack */}
-                        <div className="flex flex-wrap gap-2 mb-4">
-                            {["React", "Node.js", "MongoDB", "Express", "Tailwind", "Socket.io", "Stream"].map((tech, key) => (
-                                <span
-                                    key={key}
-                                    className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all"
-                                >
-                                    {tech}
-                                </span>
-                            ))}
-                        </div>
-
-                        {/* Buttons */}
-                        <div className="flex gap-3">
-                            <a
-                                href="https://github.com/rajscriptsGH/Talksy"
-                                target="_blank"
-                                className="px-4 py-1 rounded-lg border border-blue-500 text-white hover:bg-slate-300 hover:text-black transition-colors flex items-center gap-2"
-                            >
-                                <FaGithub /> GitHub
-                            </a>
-                            <a
-                                href="https://talksy.vercel.app"
-                                target="_blank"
-                                className="px-4 py-1 rounded-lg bg-green-700 text-white hover:bg-orange-400 transition-colors flex items-center gap-2"
-                            >
-                                <FaExternalLinkAlt /> Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div className='flex items-center justify-center mt-5'>
-                    <button className='border px-4 py-2 rounded-md cursor-pointer hover:border-amber-700'>See More</button>
-                </div>
+                ))}
             </div>
         </div>
     )

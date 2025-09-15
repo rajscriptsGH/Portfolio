@@ -3,14 +3,7 @@
 import { useEffect, useState } from "react";
 import { PaletteIcon } from "lucide-react";
 
-const themes = [
-    { name: "light", label: "Light" },
-    { name: "dark", label: "Dark" },
-    { name: "cupcake", label: "Cupcake" },
-    { name: "emerald", label: "Emerald" },
-    { name: "dracula", label: "Dracula" },
-    { name: "night", label: "Night" },
-];
+import { THEMES } from '@/constant/theme'; 
 
 export default function ThemeSelector() {
     const [theme, setTheme] = useState("light");
@@ -18,9 +11,11 @@ export default function ThemeSelector() {
 
     useEffect(() => {
         const saved = localStorage.getItem("theme");
-        if (saved) {
+        if (saved && THEMES.some(t => t.name === saved)) {
             setTheme(saved);
             document.documentElement.setAttribute("data-theme", saved);
+        } else {
+            document.documentElement.setAttribute("data-theme", "light");
         }
     }, []);
 
@@ -43,17 +38,22 @@ export default function ThemeSelector() {
 
             {/* Dropdown */}
             {open && (
-                <div className="mt-2 p-2 shadow-xl bg-base-200 rounded-xl w-40 border border-base-300">
+                <div className="mt-2 p-2 shadow-xl bg-base-200 rounded-xl w-48 border border-base-300 max-h-96 overflow-y-auto">
                     <ul className="space-y-1">
-                        {themes.map((t) => (
+                        {THEMES.map((t) => (
                             <li key={t.name}>
                                 <button
-                                    className={`w-full text-left px-3 py-2 rounded-md ${theme === t.name
-                                            ? "bg-primary text-primary-content"
-                                            : "hover:bg-base-300"
+                                    className={`w-full text-left px-3 py-2 rounded-md flex items-center gap-2 ${theme === t.name
+                                        ? "bg-primary text-primary-content"
+                                        : "hover:bg-base-300"
                                         }`}
                                     onClick={() => changeTheme(t.name)}
                                 >
+                                    {/* Optional color preview */}
+                                    <span
+                                        className="w-4 h-4 rounded-full border"
+                                        style={{ backgroundColor: t.colors[1] }}
+                                    ></span>
                                     {t.label}
                                 </button>
                             </li>
