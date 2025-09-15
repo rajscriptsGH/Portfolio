@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { PaletteIcon } from "lucide-react";
 
-import { THEMES } from '@/constant/theme'; 
+import { THEMES } from "@/constant/theme";
 
 export default function ThemeSelector() {
     const [theme, setTheme] = useState("light");
@@ -11,7 +11,7 @@ export default function ThemeSelector() {
 
     useEffect(() => {
         const saved = localStorage.getItem("theme");
-        if (saved && THEMES.some(t => t.name === saved)) {
+        if (saved && THEMES.some((t) => t.name === saved)) {
             setTheme(saved);
             document.documentElement.setAttribute("data-theme", saved);
         } else {
@@ -44,15 +44,15 @@ export default function ThemeSelector() {
                             <li key={t.name}>
                                 <button
                                     className={`w-full text-left px-3 py-2 rounded-md flex items-center gap-2 ${theme === t.name
-                                        ? "bg-primary text-primary-content"
-                                        : "hover:bg-base-300"
+                                            ? "bg-primary text-primary-content"
+                                            : "hover:bg-base-300"
                                         }`}
                                     onClick={() => changeTheme(t.name)}
                                 >
-                                    {/* Optional color preview */}
+                                    {/* Color preview (using primary) */}
                                     <span
                                         className="w-4 h-4 rounded-full border"
-                                        style={{ backgroundColor: t.colors[1] }}
+                                        style={{ backgroundColor: t.colors.primary }}
                                     ></span>
                                     {t.label}
                                 </button>
