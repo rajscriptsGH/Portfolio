@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
+import logoRk from "./logoRk.jpg";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -15,10 +16,10 @@ const ovo = Ovo({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "RK Razz",
   description: "",
   icons: {
-    icon: "/victory.png",
+    icon: logoRk.src,
   },
 };
 
@@ -31,7 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="max-w-6xl mx-auto px-6 md:px-5">
           {children}
         </div>
-        <ThemeSelector /> 
+        <ThemeSelector />
       </body>
     </html>
   );
