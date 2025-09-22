@@ -43,9 +43,24 @@ const Blogs = () => {
     return (
         <div id="blog" className="max-w-5xl mx-auto px-6 py-16">
             {/* Heading */}
-            <h2 className="text-2xl font-bold mb-8 text-primary">
+            <h2 className="relative inline-block text-2xl font-bold mb-8 text-primary">
                 <span className="text-base-content">My</span> Blogs
+                <svg
+                    className="absolute left-0 -bottom-1 w-full h-1 text-yellow-400"
+                    viewBox="0 0 100 10"
+                    preserveAspectRatio="none"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M0 5 Q 25 0, 50 5 T 100 5"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        fill="transparent"
+                    />
+                </svg>
             </h2>
+
 
             {/* Blog Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
