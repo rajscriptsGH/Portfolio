@@ -41,12 +41,27 @@ const FeaturedProjects = () => {
 
     return (
         <div id="project" className="relative max-w-6xl mx-auto px-6 py-20 lg:ml-20">
-            <h2 className="text-4xl font-bold mb-16 text-left">
+            <h2 className="relative inline-block text-4xl font-bold mb-16 text-left">
                 <span className="bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
                     Featured
                 </span>{" "}
                 Projects
+                <svg
+                    className="absolute left-0 -bottom-1 w-full h-1 text-yellow-400"
+                    viewBox="0 0 100 10"
+                    preserveAspectRatio="none"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M0 5 Q 25 0, 50 5 T 100 5"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        fill="transparent"
+                    />
+                </svg>
             </h2>
+
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 justify-items-center">
                 {projects.map((p, i) => (
