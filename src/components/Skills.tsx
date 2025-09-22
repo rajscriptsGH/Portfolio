@@ -34,10 +34,25 @@ const skills: Skill[] = [
 const SkillsSection = () => (
     <div className="mt-16 lg:ml-20 px-6">
         {/* Heading with gradient theme */}
-        <h2 className="text-3xl font-bold mb-8 text-left lg:text-left
-            bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
-            Skills & Tools
+        <h2 className="relative inline-block text-3xl font-bold mb-8 text-left lg:text-left 
+    bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
+            Tech Universe
+            <svg
+                className="absolute left-0 -bottom-1 w-full h-1 text-yellow-400"
+                viewBox="0 0 100 10"
+                preserveAspectRatio="none"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M0 5 Q 25 0, 50 5 T 100 5"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    fill="transparent"
+                />
+            </svg>
         </h2>
+
 
         <div className="flex flex-wrap gap-5 justify-center lg:justify-start">
             {skills.map(({ name, icon: Icon, color }) => (
