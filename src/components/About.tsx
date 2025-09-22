@@ -5,10 +5,25 @@ const About: FC = () => {
   return (
     <section id="about" className="mt-16 px-6 lg:ml-24">
       {/* Heading */}
-      <h1 className="text-3xl font-bold font-Ovo mb-6 
-          bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
+      <h1 className="relative inline-block text-3xl font-bold font-Ovo mb-6 
+  bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
         About Me
+        <svg
+          className="absolute left-0 -bottom-1 w-full h-1 text-yellow-400"
+          viewBox="0 0 100 10"
+          preserveAspectRatio="none"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 5 Q 25 0, 50 5 T 100 5"
+            stroke="currentColor"
+            strokeWidth="2"
+            fill="transparent"
+          />
+        </svg>
       </h1>
+
 
       {/* Description */}
       <div className="flex flex-col gap-4 items-start justify-center max-w-[700px] text-base-content/70 leading-relaxed">
