@@ -5,18 +5,22 @@ import {
     SiNodedotjs, SiExpress, SiPostgresql, SiMongodb, SiMysql,
     SiHtml5, SiCss3, SiPostman, SiVercel
 } from "react-icons/si";
+
+import { SiOpenjdk } from "react-icons/si";
+
 import { FaLinux, FaGitAlt, FaGithub, FaFigma, FaNpm } from "react-icons/fa";
 import { IconType } from "react-icons";
 
 type Skill = {
     name: string;
     icon: IconType;
-    color: string; // brand color
+    color: string;
 };
 
 const skills: Skill[] = [
     { name: "TypeScript", icon: SiTypescript, color: "#3178c6" },
     { name: "JavaScript", icon: SiJavascript, color: "#f7df1e" },
+    { name: "Java", icon: SiOpenjdk, color: "#007396" },
     { name: "Next.js", icon: SiNextdotjs, color: "#000000" },
     { name: "React", icon: SiReact, color: "#61dafb" },
     { name: "TailwindCSS", icon: SiTailwindcss, color: "#06b6d4" },
@@ -25,13 +29,6 @@ const skills: Skill[] = [
     { name: "PostgreSQL", icon: SiPostgresql, color: "#336791" },
     { name: "MongoDB", icon: SiMongodb, color: "#47a248" },
     { name: "MySQL", icon: SiMysql, color: "#4479a1" },
-    { name: "Linux", icon: FaLinux, color: "#333333" },
-    { name: "Git", icon: FaGitAlt, color: "#f05032" },
-    { name: "GitHub", icon: FaGithub, color: "#333333" },
-    { name: "Postman", icon: SiPostman, color: "#ff6c37" },
-    { name: "npm", icon: FaNpm, color: "#cb3837" },
-    { name: "Vercel", icon: SiVercel, color: "#000000" },
-    { name: "Figma", icon: FaFigma, color: "#f24e1e" },
 ];
 
 const SkillsSection = () => (
