@@ -22,7 +22,7 @@ const FeaturedProjects = () => {
             demo: "https://bytebrain.vercel.app",
         },
         {
-            title: "AnonQuest (in progress)",
+            title: "AnonQuest (building)",
             img: "/anonquest.png",
             desc: "An open-source AMA (Ask Me Anything) app with anonymous Q&A.",
             tech: ["Next.js", "TypeScript", "Tailwind", "Node.js", "MongoDB", "Express"],
@@ -30,7 +30,7 @@ const FeaturedProjects = () => {
             demo: "https://anonquest.vercel.app",
         },
         {
-            title: "Talksy (in progress)",
+            title: "Talksy (building)",
             img: "/talksyChat.png",
             desc: "A real-time chat and video app for fast and simple communication.",
             tech: ["React", "Node.js", "MongoDB", "Express", "Tailwind", "Socket.io", "Stream"],
