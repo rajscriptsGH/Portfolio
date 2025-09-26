@@ -8,6 +8,7 @@ import Navbar from "@/components/Navbar";
 import Skills from "@/components/Skills";
 import TimeLocation from "@/components/TimeLocation";
 import Blogs from "@/components/Blogs"
+import Experience from "@/components/Experience";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Header />
       <Github />
       <About />
+      {/* <Experience /> */}
       <Skills />
       <FeaturedProjects />
       <Blogs />
