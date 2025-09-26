@@ -41,7 +41,7 @@ const FeaturedProjects = () => {
 
     return (
         <div id="project" className="relative max-w-6xl mx-auto px-6 py-20 lg:ml-20">
-            <h2 className="relative inline-block text-4xl font-bold mb-16 text-left">
+            <h2 className="relative inline-block text-3xl font-bold mb-16 text-left">
                 <span className="bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
                     Featured
                 </span>{" "}

@@ -7,7 +7,7 @@ const Experience = () => {
         {
             role: "Co-Founder",
             company: "Kraf8ixLab",
-            img: "/kraf8ixlab.png", 
+            img: "/kraf8ixlab.png",
             type: "Self-employed",
             date: "Mar 2023 - Present",
             location: "Nepal",
@@ -31,7 +31,7 @@ const Experience = () => {
     ]
 
     return (
-        <div id="experience" className="relative max-w-5xl mx-auto px-6 py-20">
+        <div id="experience" className="relative max-w-5xl mx-auto px-6 py-20 lg:ml-20">
             <h2 className="text-3xl font-bold mb-12">
                 <span className="bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
                     Cool places I worked at
