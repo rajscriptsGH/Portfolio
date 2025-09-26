@@ -29,7 +29,7 @@ const Header = () => {
                 >
                     Razz
                     <span
-                        className="hidden absolute top-[-20px] right-[50px] text-sm sm:text-base px-4 py-1 rounded-md sm:flex items-center gap-2 shadow-md"
+                        className="hidden absolute top-[-20px] right-[10px] text-sm sm:text-base px-4 py-1 rounded-md sm:flex items-center gap-2 shadow-md"
                         style={{
                             background: "linear-gradient(to right, #004700 , #22c55e)",
                             color: "#fff",
@@ -55,12 +55,16 @@ const Header = () => {
                             icon: "/github.png",
                             label: "GitHub",
                         },
-                        { href: "https://x.com/rajscriptsX", icon: "/x.png", label: "X" },
                         {
-                            href: "https://linkedin.com/rajscriptsin",
-                            icon: "/linkedin.png",
-                            label: "LinkedIn",
+                            href: "https://x.com/rajscriptsX",
+                            icon: "/x.png",
+                            label: "X"
                         },
+                        // {
+                        //     href: "https://linkedin.com/rajscriptsin",
+                        //     icon: "/linkedin.png",
+                        //     label: "LinkedIn",
+                        // },
                         {
                             href: "mailto:vector36razz@gmail.com",
                             icon: "/gmail.png",
