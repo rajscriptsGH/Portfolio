@@ -30,12 +30,12 @@ const FeaturedProjects = () => {
             demo: "https://anonquest.vercel.app",
         },
         {
-            title: "Talksy (building)",
+            title: "Talksy",
             img: "/talksyChat.png",
             desc: "A real-time chat and video app for fast and simple communication.",
-            tech: ["React", "Node.js", "MongoDB", "Express", "Tailwind", "Socket.io", "Stream"],
+            tech: ["React", "Node.js", "MongoDB", "Express", "Tailwind", "Stream"],
             github: "https://github.com/rajscriptsGH/Talksy",
-            demo: "https://talksy.vercel.app",
+            demo: "https://talksy-jwl9.onrender.com",
         },
     ]
 
