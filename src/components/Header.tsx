@@ -29,7 +29,7 @@ const Header = () => {
                 >
                     Razz
                     <span
-                        className="hidden absolute top-[-20px] right-[10px] text-sm sm:text-base px-4 py-1 rounded-md sm:flex items-center gap-2 shadow-md"
+                        className="hidden absolute top-[-20px] right-[-40px] text-sm sm:text-base px-4 py-1 rounded-md sm:flex items-center gap-2 shadow-md"
                         style={{
                             background: "linear-gradient(to right, #004700 , #22c55e)",
                             color: "#fff",
@@ -44,7 +44,7 @@ const Header = () => {
                     className="font-light text-lg sm:text-xl mt-2"
                     style={{ color: "var(--text)" }}
                 >
-                    smthg developer
+                    Web Developer
                 </p>
 
                 {/* Social Links */}
@@ -70,11 +70,11 @@ const Header = () => {
                             icon: "/gmail.png",
                             label: "Gmail",
                         },
-                        {
-                            href: "https://wa.me/+9779863452890",
-                            icon: "/whatsapp.png",
-                            label: "WhatsApp",
-                        },
+                        // {
+                        //     href: "https://wa.me/+9779863452890",
+                        //     icon: "/whatsapp.png",
+                        //     label: "WhatsApp",
+                        // },
                     ].map(({ href, icon, label }) => (
                         <a
                             key={label}

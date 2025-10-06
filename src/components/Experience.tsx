@@ -17,7 +17,7 @@ const Experience = () => {
             company: "Leapfrog Technology, Inc.",
             img: "/leapfrog.svg",
             type: "Internship",
-            date: "Aug 2024 - Nov 2024",
+            date: "Apr 2025 - Jul 2025",
             location: "Nepal",
         },
         {
@@ -25,7 +25,7 @@ const Experience = () => {
             company: "LogicaBeans",
             img: "/logicabeans.svg",
             type: "Internship",
-            date: "Apr 2024 - Jul 2024",
+            date: "Oct 2024 - Dec 2024",
             location: "Kathmandu, Nepal",
         },
     ]
