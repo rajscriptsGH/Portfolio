@@ -28,7 +28,6 @@ const skills: Skill[] = [
     { name: "Express", icon: SiExpress, color: "#000000" },
     { name: "PostgreSQL", icon: SiPostgresql, color: "#336791" },
     { name: "MongoDB", icon: SiMongodb, color: "#47a248" },
-    { name: "MySQL", icon: SiMysql, color: "#4479a1" },
 ];
 
 const SkillsSection = () => (

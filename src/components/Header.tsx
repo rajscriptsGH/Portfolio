@@ -28,16 +28,7 @@ const Header = () => {
                     style={{ color: "var(--text)" }}
                 >
                     Razz
-                    <span
-                        className="hidden absolute top-[-20px] right-[-40px] text-sm sm:text-base px-4 py-1 rounded-md sm:flex items-center gap-2 shadow-md"
-                        style={{
-                            background: "linear-gradient(to right, #004700 , #22c55e)",
-                            color: "#fff",
-                        }}
-                    >
-                        <span className="w-2 h-2 rounded-full bg-white animate-pulse"></span>
-                        Available
-                    </span>
+
                 </h1>
 
                 <p
