@@ -35,7 +35,9 @@ const Header = () => {
                     className="font-light text-lg sm:text-xl mt-2"
                     style={{ color: "var(--text)" }}
                 >
-                    Web Developer
+                    Developer,
+                    <span className="text-[12px] ml-2 mr-2">building</span>
+                    <span className="text-cyan-400 font-bold">Karf8ixLab</span>
                 </p>
 
                 {/* Social Links */}
