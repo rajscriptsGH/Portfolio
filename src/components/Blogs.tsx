@@ -42,9 +42,9 @@ const blogs: Blog[] = [
 const Blogs = () => {
     return (
         <div id="blog" className="max-w-5xl mx-auto px-6 py-16 lg:ml-20">
-            {/* Heading */}
             <h2 className="relative inline-block text-3xl font-bold mb-8 text-primary">
-                <span className="text-base-content">My</span> Blogs
+                <span className="text-base-content">My</span>
+                Blogs <span className="ml-2 text-[15px] font-bold">!ready yet</span>
                 <svg
                     className="absolute left-0 -bottom-1 w-full h-1 text-yellow-400"
                     viewBox="0 0 100 10"
