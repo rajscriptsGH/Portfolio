@@ -10,22 +10,22 @@ const Education = () => {
             duration: "2022 - 2025 (Dropped Out)",
             icon: <GraduationCap className="text-blue-400" size={28} />,
         },
-        {
-            degree: "11th/12th - PCM",
-            institution: "GGIC, Kathmandu",
-            duration: "2018 - 2021",
-            icon: <School className="text-green-400" size={28} />,
-        },
-        {
-            degree: "Secondary Education",
-            institution: "Jana Jyoti Model SS, Sarlahi",
-            duration: "till 2018",
-            icon: <School className="text-green-400" size={28} />,
-        },
+        // {
+        //     degree: "11th/12th - PCM",
+        //     institution: "GGIC, Kathmandu",
+        //     duration: "2018 - 2021",
+        //     icon: <School className="text-green-400" size={28} />,
+        // },
+        // {
+        //     degree: "Secondary Education",
+        //     institution: "Jana Jyoti Model SS, Sarlahi",
+        //     duration: "till 2018",
+        //     icon: <School className="text-green-400" size={28} />,
+        // },
     ]
 
     return (
-        <section id="education" className="relative max-w-6xl mx-auto px-6 py-12 lg:ml-20">
+        <section id="education" className="relative max-w-4xl mx-auto px-6 py-12 lg:ml-20">
             <h2 className="relative inline-block text-4xl font-bold mb-8 text-left">
                 <span className="bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
                     Education
