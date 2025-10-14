@@ -17,25 +17,25 @@ const blogs: Blog[] = [
         link: "/blogs/web2-journey",
     },
     {
-        title: "How I Built Pictofy",
+        title: "About me",
         description:
-            "A deep dive into building an AI-powered text-to-image web app using MERN + Tailwind.",
+            "from my childhood to my present",
         date: "2025-08-15",
-        link: "/blogs/pictofy",
+        link: "/blogs/about-me",
     },
     {
-        title: "Next.js + Tailwind = ⚡ Supercharged Apps",
+        title: "How I escaped the tutorial hell",
         description:
-            "Why I love combining Next.js and TailwindCSS for modern web development.",
+            "From tutorial hell to self-taught",
         date: "2025-07-30",
-        link: "/blogs/next-tailwind",
+        link: "/blogs/tutorial-hell",
     },
     {
-        title: "My Journey into Web3 Development",
+        title: "The real world problem",
         description:
-            "How I started learning blockchain, smart contracts, and integrating Web3 with full-stack apps.",
+            "The real world problem I faced and how I solved it using AI",
         date: "2025-07-10",
-        link: "/blogs/web3-journey",
+        link: "/blogs/real-world-problem",
     },
 ]
 
