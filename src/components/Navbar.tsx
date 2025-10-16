@@ -22,6 +22,7 @@ const Navbar = () => {
         }
     };
 
+    
     const linkClasses = (href: string) =>
         `group relative flex items-center gap-2 px-3 py-1 font-sans transition-all
         ${active === href
