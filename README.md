@@ -5,7 +5,7 @@ Showcases projects, skills, and experiences in a clean UI with fast performance.
 
 ## Screenshot
 
-![Portfolio Demo](./public/portfolio.png)
+![Portfolio Demo](./public/showup.png)
 
 ---
 
