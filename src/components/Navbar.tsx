@@ -1,5 +1,6 @@
 'use client'
 import React, { useState, useEffect } from 'react'
+import Link from 'next/link'
 import { Home, FolderKanban, BookOpen } from "lucide-react"
 
 const Navbar = () => {
@@ -19,7 +20,7 @@ const Navbar = () => {
             element.scrollIntoView({ behavior: "smooth", block: "start" });
             setActive(href);
         }
-    }
+    };
 
     const linkClasses = (href: string) =>
         `group relative flex items-center gap-2 px-3 py-1 font-sans transition-all
@@ -35,9 +36,9 @@ const Navbar = () => {
             <ul className="flex items-center gap-4 lg:gap-10">
                 {/* Home */}
                 <li>
-                    <a
-                        className={linkClasses("/")}
+                    <Link
                         href="/"
+                        className={linkClasses("/")}
                         onClick={(e) => handleClick(e, "/")}
                     >
                         <Home size={20} />
@@ -48,14 +49,14 @@ const Navbar = () => {
                                 Home
                             </span>
                         )}
-                    </a>
+                    </Link>
                 </li>
 
                 {/* Projects */}
                 <li>
-                    <a
-                        className={linkClasses("#project")}
+                    <Link
                         href="#project"
+                        className={linkClasses("#project")}
                         onClick={(e) => handleClick(e, "#project")}
                     >
                         <FolderKanban size={20} />
@@ -66,14 +67,14 @@ const Navbar = () => {
                                 Projects
                             </span>
                         )}
-                    </a>
+                    </Link>
                 </li>
 
                 {/* Blogs */}
                 <li>
-                    <a
-                        className={linkClasses("#blog")}
+                    <Link
                         href="#blog"
+                        className={linkClasses("#blog")}
                         onClick={(e) => handleClick(e, "#blog")}
                     >
                         <BookOpen size={20} />
@@ -84,17 +85,17 @@ const Navbar = () => {
                                 Blogs
                             </span>
                         )}
-                    </a>
+                    </Link>
                 </li>
             </ul>
 
             {/* Availability Badge */}
             <span
                 className="relative ml-4 flex items-center justify-center group
-               w-8 h-8 rounded-full bg-green-700 text-white
-               sm:w-auto sm:h-auto sm:rounded-md sm:px-4 sm:py-1
-               sm:bg-[linear-gradient(to_right,#004700,#22c55e)]
-               sm:gap-2 sm:shadow-md sm:ml-4 transition-all duration-300"
+                w-8 h-8 rounded-full bg-green-700 text-white
+                sm:w-auto sm:h-auto sm:rounded-md sm:px-4 sm:py-1
+                sm:bg-[linear-gradient(to_right,#004700,#22c55e)]
+                sm:gap-2 sm:shadow-md sm:ml-4 transition-all duration-300"
             >
                 {/* Pulsing dot */}
                 <span className="w-2 h-2 rounded-full bg-white animate-pulse"></span>
@@ -102,19 +103,15 @@ const Navbar = () => {
                 {/* Text visible only on sm and up */}
                 <span className="hidden sm:inline font-medium">Available</span>
 
-                {/* Tooltip (for mobile only) */}
+                {/* Tooltip (mobile hover) */}
                 <span
                     className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 text-xs rounded 
-                   bg-green-700 text-white opacity-0 group-hover:opacity-100 transition-all
-                   pointer-events-none sm:hidden"
+                    bg-green-700 text-white opacity-0 group-hover:opacity-100 transition-all
+                    pointer-events-none sm:hidden"
                 >
                     Available
                 </span>
             </span>
-
-
-
-
         </nav>
     )
 }
