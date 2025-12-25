@@ -21,8 +21,9 @@ const Contact = () => {
                     <Image
                         src="/profile.jpg"
                         alt="Call"
-                        fill
-                        className="w-5 h-5  rounded-2xl"
+                        width={20}
+                        height={20}
+                        className="rounded-full"
                     />
                     Book a Call
                 </a>
@@ -33,8 +34,8 @@ const Contact = () => {
                     <Image
                         src="/gmail.png"
                         alt="Mail"
-                        fill
-                        className="w-5 h-5 rounded-2xl"
+                        width={20}
+                        height={20}
                     />
                     Send Message
                 </a>
