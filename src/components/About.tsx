@@ -24,55 +24,30 @@ const About: FC = () => {
         </svg>
       </h1>
 
-
       {/* Description */}
       <div className="flex flex-col gap-4 items-start justify-center max-w-[700px] text-base-content/70 leading-relaxed">
         <p>
           Hi! I am <span className="font-bold text-blue-500">Raj Yadav</span>, a{" "}
-          <span className="text-amber-500">CS Undergrad</span> and{" "}
-          <span className="text-cyan-400">Full-Stack Developer</span> passionate
-          about building impactful digital products.
+          <span className="text-cyan-400">Full-Stack Developer</span> passionate about building scalable and user-friendly digital solutions.
         </p>
 
         <p>
-          I specialize in{" "}
-          <span className="font-semibold text-blue-500">MERN </span>stack,{" "}
+          I specialize in <span className="font-semibold text-blue-500">MERN stack</span>,{" "}
           <span className="font-semibold text-cyan-400">Next.js</span>, and{" "}
-          <span className="font-semibold text-purple-500">TypeScript</span>. Currently,
-          I am exploring <span className="text-purple-600">Web3 </span> and diving
-          deeper into <span className="font-semibold text-cyan-400">UI/UX design</span>.
+          <span className="font-semibold text-purple-500">TypeScript</span>. currently exploring{" "}
+          <span className="text-purple-600 font-semibold">Web3</span> technologies and
+          <span className="text-purple-600 font-semibold"> DevOps</span> to build robust, modern, and automated applications.
         </p>
 
         <p>
-          I love creating user-friendly applications, contributing to{" "}
-          <span className="italic">open-source projects</span>, and solving{" "}
-          <span className="underline decoration-blue-500">real-world problems</span>{" "}
-          through code.
+          My goal is to combine <span className="font-semibold text-cyan-400">full-stack development</span>,
+          <span className="font-semibold text-purple-600"> Web3</span>, and <span className="font-semibold text-purple-600">DevOps</span> to create end-to-end solutions that are efficient, scalable, and impactful.
         </p>
-      </div>
 
-      {/* Buttons */}
-      <div className="mt-8 flex gap-4">
-        {/* See More Button */}
-        <button
-          type="button"
-          className="flex items-center justify-center px-6 py-2 rounded-2xl
-            bg-white/10 backdrop-blur-md border border-blue-500 text-blue-500
-            font-semibold text-sm transition-all duration-300
-            hover:bg-white/20 hover:shadow-lg hover:scale-105"
-        >
-          See More
-        </button>
-
-        {/* Resume Button */}
-        <button
-          type="button"
-          className="flex items-center justify-center px-6 py-2 rounded-2xl
-            bg-gradient-to-r from-blue-500 to-cyan-400 text-white font-semibold
-            shadow-md transition-all duration-300 hover:shadow-xl hover:scale-105"
-        >
-          Resume
-        </button>
+        <p>
+          I also enjoy contributing to <span className="italic">open-source projects</span> and solving{" "}
+          <span className="underline decoration-blue-500">real-world problems</span> through clean and maintainable code.
+        </p>
       </div>
     </section>
   )
