@@ -10,18 +10,6 @@ const Education = () => {
             duration: "2022 - 2025 (Dropped Out)",
             icon: <GraduationCap className="text-blue-400" size={28} />,
         },
-        // {
-        //     degree: "11th/12th - PCM",
-        //     institution: "GGIC, Kathmandu",
-        //     duration: "2018 - 2021",
-        //     icon: <School className="text-green-400" size={28} />,
-        // },
-        // {
-        //     degree: "Secondary Education",
-        //     institution: "Jana Jyoti Model SS, Sarlahi",
-        //     duration: "till 2018",
-        //     icon: <School className="text-green-400" size={28} />,
-        // },
     ]
 
     return (
