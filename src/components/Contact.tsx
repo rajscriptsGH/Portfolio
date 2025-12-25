@@ -7,7 +7,7 @@ const Contact = () => {
             <h2 className="text-3xl font-bold mb-4">Let's Work Together</h2>
 
             <p className="text-gray-400 mb-8 text-center max-w-2xl">
-                I’m open to collaborating on innovative projects and technology-driven initiatives. If you have a proposal or would like to discuss potential opportunities, feel free to get in touch!
+                I'm open to collaborating on innovative projects and technology-driven initiatives. If you have a proposal or would like to discuss potential opportunities, feel free to get in touch!
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-6">
