@@ -25,8 +25,8 @@ const Footer = () => {
     }, [])
 
     return (
-        <footer className="w-full py-6 mt-10 border-t border-gray-700 bg-gray-900 text-gray-300">
-            <div className="container mx-auto flex flex-col items-center justify-center gap-4 px-4">
+        <footer className="py-6 mt-10 mb-5 px-2 lg:ml-24 border-b border-gray-700 bg-gray-900 text-gray-300">
+            <div className="container mx-auto flex flex-col items-center justify-center gap-4 px-4 rounded-md">
                 {quote && (
                     <p className="italic text-center text-gray-400">“{quote}”</p>
                 )}
