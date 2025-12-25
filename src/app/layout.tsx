@@ -1,19 +1,19 @@
 import type { Metadata } from "next";
-import { Outfit, Ovo } from "next/font/google";
+// import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
 import logoRk from "./logoRk.jpg";
 
-const outfit = Outfit({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--outfit-font",
-});
+// const outfit = Outfit({
+//   subsets: ["latin"],
+//   weight: ["400", "500", "600", "700"],
+//   variable: "--outfit-font",
+// });
 
-const ovo = Ovo({
-  subsets: ["latin"],
-  weight: ["400"],
-  variable: "--ovo-font",
-});
+// const ovo = Ovo({
+//   subsets: ["latin"],
+//   weight: ["400"],
+//   variable: "--ovo-font",
+// });
 
 export const metadata: Metadata = {
   title: "RK Razz",

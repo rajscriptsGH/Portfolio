@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import { GraduationCap, School } from "lucide-react"
+import { GraduationCap } from "lucide-react"
 
 const Education = () => {
     const education = [

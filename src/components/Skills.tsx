@@ -2,13 +2,12 @@
 
 import {
     SiTypescript, SiJavascript, SiNextdotjs, SiReact, SiTailwindcss,
-    SiNodedotjs, SiExpress, SiPostgresql, SiMongodb, SiMysql,
-    SiHtml5, SiCss3, SiPostman, SiVercel
+    SiNodedotjs, SiExpress, SiPostgresql, SiMongodb,
 } from "react-icons/si";
 
 import { SiOpenjdk } from "react-icons/si";
 
-import { FaLinux, FaGitAlt, FaGithub, FaFigma, FaNpm } from "react-icons/fa";
+// import { FaLinux, FaGitAlt, FaGithub, FaFigma, FaNpm } from "react-icons/fa";
 import { IconType } from "react-icons";
 
 type Skill = {
