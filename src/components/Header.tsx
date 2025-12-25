@@ -58,11 +58,11 @@ const Header = () => {
                             icon: "/linkedin.png",
                             label: "LinkedIn",
                         },
-                        {
-                            href: "mailto:vector36razz@gmail.com",
-                            icon: "/gmail.png",
-                            label: "Gmail",
-                        },
+                        // {
+                        //     href: "mailto:vector36razz@gmail.com",
+                        //     icon: "/gmail.png",
+                        //     label: "Gmail",
+                        // },
                         {
                             href: "mailto:vector36razz@gmail.com",
                             icon: "/resume.jpeg",
