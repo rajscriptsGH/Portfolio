@@ -10,7 +10,7 @@ const Header = () => {
         >
             {/* Profile Picture */}
             <div
-                className="relative w-40 h-40 md:w-52 md:h-52 flex-shrink-0 rounded-3xl overflow-hidden shadow-lg"
+                className="relative w-30 h-30 md:w-42 md:h-42 flex-shrink-0 rounded-3xl overflow-hidden shadow-lg"
                 style={{ border: "2px solid var(--primary)" }}
             >
                 <Image
@@ -53,21 +53,21 @@ const Header = () => {
                             icon: "/x.png",
                             label: "X"
                         },
-                        // {
-                        //     href: "https://linkedin.com/rajscriptsin",
-                        //     icon: "/linkedin.png",
-                        //     label: "LinkedIn",
-                        // },
+                        {
+                            href: "https://linkedin.com/rajscriptsin",
+                            icon: "/linkedin.png",
+                            label: "LinkedIn",
+                        },
                         {
                             href: "mailto:vector36razz@gmail.com",
                             icon: "/gmail.png",
                             label: "Gmail",
                         },
-                        // {
-                        //     href: "https://wa.me/+9779863452890",
-                        //     icon: "/whatsapp.png",
-                        //     label: "WhatsApp",
-                        // },
+                        {
+                            href: "mailto:vector36razz@gmail.com",
+                            icon: "/resume.jpeg",
+                            label: "Reseme",
+                        },
                     ].map(({ href, icon, label }) => (
                         <a
                             key={label}
