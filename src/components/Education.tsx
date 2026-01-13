@@ -7,7 +7,7 @@ const Education = () => {
         {
             degree: "B.Tech CSE",
             institution: "KIIT",
-            duration: "2022-2025(Drop-out)",
+            duration: "2022-2026",
             icon: <GraduationCap className="text-blue-400" size={28} />,
         },
     ]
