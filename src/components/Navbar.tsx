@@ -22,7 +22,7 @@ const Navbar = () => {
         }
     };
 
-    
+
     const linkClasses = (href: string) =>
         `group relative flex items-center gap-2 px-3 py-1 font-sans transition-all
         ${active === href
@@ -56,9 +56,8 @@ const Navbar = () => {
                 {/* Projects */}
                 <li>
                     <Link
-                        href="#project"
+                        href="/projects"
                         className={linkClasses("#project")}
-                        onClick={(e) => handleClick(e, "#project")}
                     >
                         <FolderKanban size={20} />
                         {active === "#project" && <span className="hidden lg:inline font-semibold">Projects</span>}
@@ -74,9 +73,8 @@ const Navbar = () => {
                 {/* Blogs */}
                 <li>
                     <Link
-                        href="#blog"
+                        href="/blogs"
                         className={linkClasses("#blog")}
-                        onClick={(e) => handleClick(e, "#blog")}
                     >
                         <BookOpen size={20} />
                         {active === "#blog" && <span className="hidden lg:inline font-semibold">Blogs</span>}
