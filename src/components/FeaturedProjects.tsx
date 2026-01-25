@@ -1,154 +1,140 @@
 "use client"
+
 import Image from "next/image"
-import React from "react"
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"
+import {
+    FaGithub,
+    FaExternalLinkAlt,
+    FaReact,
+    FaNodeJs
+} from "react-icons/fa"
+import {
+    SiNextdotjs,
+    SiTypescript,
+    SiMongodb,
+    SiTailwindcss,
+    SiStreamlit
+} from "react-icons/si"
+
+const techIcons: any = {
+    React: <FaReact />,
+    Nextjs: <SiNextdotjs />,
+    "Next.js": <SiNextdotjs />,
+    TypeScript: <SiTypescript />,
+    "Node.js": <FaNodeJs />,
+    MongoDB: <SiMongodb />,
+    Tailwind: <SiTailwindcss />,
+    Stream: <SiStreamlit />,
+}
 
 const FeaturedProjects = () => {
     const projects = [
         {
+            title: "MentorHub",
+            img: "/mentorhub.png",
+            desc: "A platform to help and mentor others.",
+            tech: ["Nextjs", "React", "TypeScript", "Tailwind"],
+            github: "#",
+            demo: "https://true-mentorhub.vercel.app/",
+        },
+        {
             title: "Pictofy",
             img: "/pictofy.png",
-            desc: "A modern AI-powered web app that generates stunning images from text.",
-            tech: ["React", "Node.js", "MongoDB", "Express", "Tailwind"],
+            desc: "AI-powered image generation web app.",
+            tech: ["React", "Node.js", "MongoDB", "Tailwind"],
             github: "https://github.com/rajscriptsGH/Pictofy",
             demo: "https://pictofy.vercel.app",
         },
         {
-            title: "ByteBrain",
-            img: "/bytebrain.png",
-            desc: "A full-stack Second Brain app to organize thoughts, ideas, and notes.",
-            tech: ["TypeScript", "React", "Node.js", "MongoDB", "Express", "Tailwind"],
-            github: "https://github.com/rajscriptsGH/ByteBrain",
-            demo: "https://bytebrain.vercel.app",
-        },
-        {
-            title: "AnonQuest (building)",
+            title: "AnonQuest",
             img: "/anonquest.png",
-            desc: "An open-source AMA (Ask Me Anything) app with anonymous Q&A.",
-            tech: ["Next.js", "TypeScript", "Tailwind", "Node.js", "MongoDB", "Express"],
+            desc: "Anonymous AMA platform.",
+            tech: ["Next.js", "TypeScript", "MongoDB", "Tailwind"],
             github: "https://github.com/rajscriptsGH/AnonQuest",
             demo: "https://anonquest.vercel.app",
         },
         {
             title: "Talksy",
             img: "/talksyChat.png",
-            desc: "A real-time chat and video app for fast and simple communication.",
-            tech: ["React", "Node.js", "MongoDB", "Express", "Tailwind", "Stream"],
+            desc: "Real-time chat & video platform.",
+            tech: ["React", "Node.js", "MongoDB", "Stream"],
             github: "https://github.com/rajscriptsGH/Talksy",
             demo: "https://talksy-jwl9.onrender.com",
         },
     ]
 
     return (
-        <div id="project" className="relative max-w-6xl mx-auto px-6 py-20 lg:ml-20">
-            <h2 className="relative inline-block text-3xl font-bold mb-16 text-left">
-                <span className="bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
-                    Featured
-                </span>{" "}
-                Projects
-                <svg
-                    className="absolute left-0 -bottom-1 w-full h-1 text-yellow-400"
-                    viewBox="0 0 100 10"
-                    preserveAspectRatio="none"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                        d="M0 5 Q 25 0, 50 5 T 100 5"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        fill="transparent"
-                    />
-                </svg>
-            </h2>
+        <section id="project" className="max-w-5xl mx-auto px-8 py-20 lg:ml-20">
+            <h2 className="relative inline-block text-3xl font-bold mb-8 text-left lg:text-left bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
+                Featured Projects
+                <svg className="absolute left-0 -bottom-1 w-full h-1 text-yellow-400" viewBox="0 0 100 10" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg" > <path d="M0 5 Q 25 0, 50 5 T 100 5" stroke="currentColor" strokeWidth="2" fill="transparent" /> </svg> </h2>
 
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 justify-items-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
                 {projects.map((p, i) => (
                     <div
                         key={i}
-                        className="group relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 w-full max-w-md"
+                        className="group rounded-2xl bg-[#0b0b0b] border border-white/10 
+            overflow-hidden transition-all duration-500 
+            hover:border-orange-500/80 hover:scale-[1.03]"
                     >
-                        {/* Image */}
-                        <div className="relative w-full h-72 md:h-80 rounded-2xl overflow-hidden">
-                            <Image
-                                src={p.img}
-                                alt={p.title}
-                                fill
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                priority
-                                className="object-cover transform transition-transform duration-700 group-hover:scale-105"
-                            />
+                        <div className="relative h-60 p-4 flex items-center justify-center bg-gradient-to-br from-[#e8dcc8] via-[#c9d4ff] to-[#2a2a2a]">
 
-                            {/* Always visible content */}
-                            <div className="absolute bottom-0 left-0 p-4 bg-white/80 backdrop-blur-md rounded-tl-xl rounded-tr-xl">
-                                <h3 className="text-xl font-bold bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
-                                    {p.title}
-                                </h3>
-                                <p className="text-sm text-gray-700">{p.desc}</p>
+                            <div className="relative w-full h-full max-w-[90%] rounded-xl overflow-hidden shadow-2xl">
+                                <Image
+                                    src={p.img}
+                                    alt={p.title}
+                                    fill
+                                    className="transition-transform duration-700 "
+                                />
                             </div>
-
                         </div>
 
+                        {/* Content */}
+                        <div className="p-6 text-white">
+                            {/* Title + Links */}
+                            <div className="flex items-center justify-between mb-3">
+                                <h3 className="text-xl font-semibold">{p.title}</h3>
 
-                        {/* Content that slides up on hover */}
-                        <div className="absolute bottom-0 left-0 right-0 p-6 bg-white/90 backdrop-blur-md rounded-b-2xl transition-transform duration-500 transform translate-y-full group-hover:translate-y-0">
+                                <div className="flex gap-4">
+                                    <a
+                                        href={p.github}
+                                        target="_blank"
+                                        className="text-gray-400 hover:text-white transition"
+                                    >
+                                        <FaGithub size={18} />
+                                    </a>
 
-                            {/* Title with gradient */}
-                            <h3 className="text-2xl font-bold mb-2 
-        bg-gradient-to-r from-blue-500 to-cyan-400 
-        bg-clip-text text-transparent">
-                                {p.title}
-                            </h3>
+                                    <a
+                                        href={p.demo}
+                                        target="_blank"
+                                        className="text-gray-400 hover:text-orange-500 transition"
+                                    >
+                                        <FaExternalLinkAlt size={16} />
+                                    </a>
+                                </div>
+                            </div>
+
 
                             {/* Description */}
-                            <p className="text-sm text-gray-700 mb-4">{p.desc}</p>
+                            <p className="text-sm text-gray-400 mb-5">{p.desc}</p>
 
-                            {/* Tech stack with hover gradient */}
-                            <div className="flex flex-wrap gap-2 mb-4">
+                            {/* Tech icons */}
+                            <div className="flex gap-3 text-xl text-gray-400">
                                 {p.tech.map((t, idx) => (
                                     <span
                                         key={idx}
-                                        className="badge badge-outline text-gray-700 border-gray-400 
-                    hover:text-transparent hover:bg-clip-text 
-                    hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-400 
-                    transition-all duration-300"
+                                        className="hover:text-orange-500 transition"
+                                        title={t}
                                     >
-                                        {t}
+                                        {techIcons[t]}
                                     </span>
                                 ))}
                             </div>
 
-                            {/* Buttons */}
-                            <div className="flex gap-4 mt-4">
-                                {/* GitHub Button */}
-                                <a
-                                    href={p.github}
-                                    target="_blank"
-                                    className="flex items-center gap-2 px-4 py-2 rounded-xl bg-black text-white font-semibold text-sm border-2 border-transparent transition-all duration-300 hover:border-blue-500 hover:scale-105"
-                                >
-                                    <FaGithub className="text-lg" />
-                                    GitHub
-                                </a>
-
-                                {/* Demo Button */}
-                                <a
-                                    href={p.demo}
-                                    target="_blank"
-                                    className="flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-blue-500 to-cyan-400 text-white font-semibold text-sm shadow-md transition-all duration-300 hover:shadow-xl hover:scale-105"
-                                >
-                                    <FaExternalLinkAlt className="text-lg" />
-                                    Demo
-                                </a>
-                            </div>
-
-
                         </div>
-
                     </div>
                 ))}
             </div>
-        </div>
+        </section>
     )
 }
 

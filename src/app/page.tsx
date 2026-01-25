@@ -9,7 +9,7 @@ import Skills from "@/components/Skills";
 import TimeLocation from "@/components/TimeLocation";
 import Blogs from "@/components/Blogs"
 // import Experience from "@/components/Experience";
-import Education from "@/components/Education";
+// import Education from "@/components/Education";
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
       <Header />
       <Github />
       <About />
-      <Education />
+      {/* <Education /> */}
       {/* <Experience /> */}
       <Skills />
       <FeaturedProjects />
