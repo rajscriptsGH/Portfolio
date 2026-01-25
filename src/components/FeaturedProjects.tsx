@@ -1,21 +1,42 @@
 "use client"
 
 import Image from "next/image"
+import { ReactNode } from "react"
 import {
     FaGithub,
     FaExternalLinkAlt,
     FaReact,
-    FaNodeJs
+    FaNodeJs,
 } from "react-icons/fa"
 import {
     SiNextdotjs,
     SiTypescript,
     SiMongodb,
     SiTailwindcss,
-    SiStreamlit
+    SiStreamlit,
 } from "react-icons/si"
 
-const techIcons: any = {
+
+type TechKey =
+    | "React"
+    | "Nextjs"
+    | "Next.js"
+    | "TypeScript"
+    | "Node.js"
+    | "MongoDB"
+    | "Tailwind"
+    | "Stream"
+
+type Project = {
+    title: string
+    img: string
+    desc: string
+    tech: TechKey[]
+    github: string
+    demo: string
+}
+
+const techIcons: Record<TechKey, ReactNode> = {
     React: <FaReact />,
     Nextjs: <SiNextdotjs />,
     "Next.js": <SiNextdotjs />,
@@ -26,8 +47,9 @@ const techIcons: any = {
     Stream: <SiStreamlit />,
 }
 
+
 const FeaturedProjects = () => {
-    const projects = [
+    const projects: Project[] = [
         {
             title: "MentorHub",
             img: "/mentorhub.png",
@@ -63,10 +85,25 @@ const FeaturedProjects = () => {
     ]
 
     return (
-        <section id="project" className="max-w-5xl mx-auto px-8 py-20 lg:ml-20">
-            <h2 className="relative inline-block text-3xl font-bold mb-8 text-left lg:text-left bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
+        <section
+            id="project"
+            className="max-w-5xl mx-auto px-8 py-20 lg:ml-20"
+        >
+            <h2 className="relative inline-block text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
                 Featured Projects
-                <svg className="absolute left-0 -bottom-1 w-full h-1 text-yellow-400" viewBox="0 0 100 10" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg" > <path d="M0 5 Q 25 0, 50 5 T 100 5" stroke="currentColor" strokeWidth="2" fill="transparent" /> </svg> </h2>
+                <svg
+                    className="absolute left-0 -bottom-1 w-full h-1 text-yellow-400"
+                    viewBox="0 0 100 10"
+                    preserveAspectRatio="none"
+                    fill="none"
+                >
+                    <path
+                        d="M0 5 Q 25 0, 50 5 T 100 5"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                    />
+                </svg>
+            </h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
                 {projects.map((p, i) => (
@@ -76,21 +113,20 @@ const FeaturedProjects = () => {
             overflow-hidden transition-all duration-500 
             hover:border-orange-500/80 hover:scale-[1.03]"
                     >
+                        {/* Image Frame */}
                         <div className="relative h-60 p-4 flex items-center justify-center bg-gradient-to-br from-[#e8dcc8] via-[#c9d4ff] to-[#2a2a2a]">
-
                             <div className="relative w-full h-full max-w-[90%] rounded-xl overflow-hidden shadow-2xl">
                                 <Image
                                     src={p.img}
                                     alt={p.title}
                                     fill
-                                    className="transition-transform duration-700 "
+                                    className="object-cover transition-transform duration-700 group-hover:scale-105"
                                 />
                             </div>
                         </div>
 
                         {/* Content */}
                         <div className="p-6 text-white">
-                            {/* Title + Links */}
                             <div className="flex items-center justify-between mb-3">
                                 <h3 className="text-xl font-semibold">{p.title}</h3>
 
@@ -102,7 +138,6 @@ const FeaturedProjects = () => {
                                     >
                                         <FaGithub size={18} />
                                     </a>
-
                                     <a
                                         href={p.demo}
                                         target="_blank"
@@ -113,23 +148,19 @@ const FeaturedProjects = () => {
                                 </div>
                             </div>
 
-
-                            {/* Description */}
                             <p className="text-sm text-gray-400 mb-5">{p.desc}</p>
 
-                            {/* Tech icons */}
                             <div className="flex gap-3 text-xl text-gray-400">
                                 {p.tech.map((t, idx) => (
                                     <span
                                         key={idx}
-                                        className="hover:text-orange-500 transition"
                                         title={t}
+                                        className="hover:text-orange-500 transition"
                                     >
                                         {techIcons[t]}
                                     </span>
                                 ))}
                             </div>
-
                         </div>
                     </div>
                 ))}
