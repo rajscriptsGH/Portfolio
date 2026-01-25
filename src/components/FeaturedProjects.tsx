@@ -126,7 +126,7 @@ const FeaturedProjects = () => {
         ]
 
     return (
-        <section id="project" className="max-w-5xl mx-auto px-8 py-20 lg:ml-20">
+        <section className="max-w-5xl mx-auto px-8 py-20 lg:ml-20">
             <h2 className="relative inline-block text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
                 Featured Projects
                 <svg className="absolute left-0 -bottom-1 w-full h-1 text-yellow-400" viewBox="0 0 100 10" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
