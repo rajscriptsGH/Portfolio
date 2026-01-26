@@ -15,8 +15,8 @@ export default function Home() {
       <TimeLocation />
       <Navbar />
       <Header />
-      <Github />
       <About />
+      <Github />
       <Skills />
       <FeaturedProjects />
       <Blogs />

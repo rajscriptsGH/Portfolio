@@ -4,7 +4,7 @@ import GitHubCalendar from 'react-github-calendar';
 
 const Github = () => {
     return (
-        <div className='flex justify-center items-center mt-10 px-2 lg:ml-10'>
+        <div className='flex justify-center items-center mt-10 px-3 lg:ml-10'>
             <div className='border border-slate-500 p-4 rounded-md overflow-hidden w-full max-w-[800px] md:max-w-[850px]'>
                 <div className='scale-98 md:scale-100 origin-top-left'>
                     <GitHubCalendar username="rajscriptsGH" />
